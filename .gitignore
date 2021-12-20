@@ -1,0 +1,5 @@
+# Ignore Versions
+ReleaseVersions/
+
+# Ignore Misc. Files
+ExternalAssets/
