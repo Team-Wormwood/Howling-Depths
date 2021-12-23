@@ -1,0 +1,23 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "minecraft:silver_nugget"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"#"
+		],
+		"key": {
+			"#": {
+				"item": "sakana:silver_ingot"
+			}
+		},
+		"result": {
+			"item": "sakana:silver_nugget",
+			"count": 9
+		}
+	}
+}

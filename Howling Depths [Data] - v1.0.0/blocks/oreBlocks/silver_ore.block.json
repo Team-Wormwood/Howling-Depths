@@ -1,0 +1,27 @@
+{
+	"format_version": "1.18.20",
+	"minecraft:block": {
+		"description": {
+			"identifier": "sakana:silver_ore"
+		},
+		"components": {
+			"tag:stone": {},
+			"tag:iron_pick_diggable": {},
+			"minecraft:destroy_time": 2,
+			"minecraft:map_color": "#cbf2f2",
+			"minecraft:loot": "loot_tables/empty.json",
+			"minecraft:on_player_destroyed": {
+				"event": "destroyed",
+				"target": "self",
+				"condition": "q.equipped_item_any_tag('slot.weapon.mainhand','minecraft:iron_tier','minecraft:diamond_tier','minecraft:netherite_tier')"
+			}
+		},
+		"events": {
+			"destroyed": {
+				"spawn_loot": {
+					"table": "loot_tables/blocks/oreTables/silver.loot_table.json"
+				}
+			}
+		}
+	}
+}

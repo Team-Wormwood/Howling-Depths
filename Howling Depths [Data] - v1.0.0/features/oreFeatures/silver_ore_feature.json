@@ -1,0 +1,28 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:ore_feature": {
+        "description": {
+            "identifier": "minecraft:silver_ore_feature"
+        },
+        "count": 8,
+        "discard_chance_on_air_exposure": 1.0,
+        "replace_rules": [
+            {
+                "places_block": "sakana:silver_ore",
+                "may_replace": [
+                    {
+                        "name": "minecraft:stone"
+                    }
+                ]
+            },
+            {
+                "places_block": "sakana:deepslate_silver_ore",
+                "may_replace": [
+                    {
+                        "name": "minecraft:deepslate"
+                    }
+                ]
+            }
+        ]
+    }
+}

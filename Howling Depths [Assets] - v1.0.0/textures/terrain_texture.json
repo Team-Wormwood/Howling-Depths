@@ -1,0 +1,20 @@
+{
+    "num_mip_levels": 4,
+    "padding": 8,
+    "resource_pack_name": "vanilla",
+    "texture_data": {
+        "silver_block": {
+            "textures": "textures/blocks/silver_block"
+        },
+        "silver_ore": {
+            "textures": "textures/blocks/silver_ore"
+        },
+        "deepslate_silver_ore": {
+            "textures": "textures/blocks/deepslate_silver_ore"
+        },
+        "raw_silver_block": {
+            "textures": "textures/blocks/raw_silver_block"
+        }
+    },
+    "texture_name": "atlas.terrain"
+}

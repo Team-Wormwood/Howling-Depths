@@ -1,0 +1,23 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "minecraft:raw_silver"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"#"
+		],
+		"key": {
+			"#": {
+				"item": "sakana:raw_silver_block"
+			}
+		},
+		"result": {
+			"item": "sakana:raw_silver",
+			"count": 9
+		}
+	}
+}

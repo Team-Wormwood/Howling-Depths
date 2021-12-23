@@ -1,0 +1,42 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_data": {
+        "silver_ingot": {
+            "textures": "textures/items/silver_ingot"
+        },
+        "silver_nugget": {
+            "textures": "textures/items/silver_nugget"
+        },
+        "raw_silver": {
+            "textures": "textures/items/raw_silver"
+        },
+        "misc.spawn_eggs": {
+            "textures": [
+                "textures/items/eggs/egg_blast_miner",
+                "textures/items/eggs/egg_rat"
+            ]
+        },
+        "tool.bullet": {
+            "textures": []
+        },
+        "tools.kyanite": {
+            "textures": [
+                "textures/items/tools/biome/kyanite_sword",
+                "textures/items/tools/biome/kyanite_pickaxe",
+                "textures/items/tools/biome/kyanite_axe",
+                "textures/items/tools/biome/kyanite_shovel",
+                "textures/items/tools/biome/kyanite_hoe",
+                "textures/items/tools/biome/kyanite_naginata"
+            ]
+        },
+        "armour.kyanite": {
+            "textures": [
+                "textures/items/tools/biome/kyanite_kabuto",
+                "textures/items/tools/biome/kyanite_breastplate",
+                "textures/items/tools/biome/kyanite_leggings",
+                "textures/items/tools/biome/kyanite_boots"
+            ]
+        }
+    },
+    "texture_name": "atlas.items"
+}

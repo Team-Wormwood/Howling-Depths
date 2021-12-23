@@ -1,0 +1,18 @@
+##Code all done by @yanasakanadev
+##2021/12
+##やなぎ#2957
+
+## Packs
+pack.description=A horrifying twist to the subterranean scape. Terror around every corner! §d@yanasakanadev§r §c§l(Make sure to put this mod as top priority!)
+pack.name=§gHowling Depths
+
+## Blocks
+tile.sakana:deepslate_silver_ore.name=Deepslate Silver Ore
+tile.sakana:silver_block.name=Block of Silver
+tile.sakana:silver_ore.name=Silver Ore
+tile.sakana:raw_silver_block.name=Block of Raw Silver
+
+## Items
+item.sakana:silver_ingot=Silver Ingot
+item.sakana:silver_nugget=Silver Nugget
+item.sakana:raw_silver=Raw Silver
