@@ -1,0 +1,31 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.werewolf.base": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"blend_transition": 0.2,
+					"blend_via_shortest_path": true,
+					"transitions": [
+						{
+							"melee_attack": "variable.has_target && variable.attack_time >= 0.0"
+						}
+					]
+				},
+				"melee_attack": {
+					"blend_transition": 0.2,
+					"blend_via_shortest_path": true,
+					"animations": [
+						"werewolf_attack"
+					],
+					"transitions": [
+						{
+							"default": "!variable.has_target || variable.attack_time < 0.0"
+						}
+					]
+				}
+			}
+		}
+	}
+}

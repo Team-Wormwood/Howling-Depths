@@ -10,6 +10,10 @@
 			"minecraft:destroy_time": 2,
 			"minecraft:map_color": "#cbf2f2",
 			"minecraft:loot": "loot_tables/empty.json",
+			"minecraft:creative_category": {
+				"category": "construction",
+				"group": "itemGroup.name.construction"
+			},
 			"minecraft:on_player_destroyed": {
 				"event": "destroyed",
 				"target": "self",

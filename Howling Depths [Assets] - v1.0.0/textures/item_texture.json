@@ -1,40 +1,37 @@
 {
     "resource_pack_name": "vanilla",
     "texture_data": {
+        "raw_silver": {
+            "textures": "textures/items/raw_silver"
+        },
         "silver_ingot": {
             "textures": "textures/items/silver_ingot"
         },
         "silver_nugget": {
             "textures": "textures/items/silver_nugget"
         },
-        "raw_silver": {
-            "textures": "textures/items/raw_silver"
-        },
-        "misc.spawn_eggs": {
-            "textures": [
-                "textures/items/eggs/egg_blast_miner",
-                "textures/items/eggs/egg_rat"
-            ]
+        "spawn_egg.Werewolf": {
+            "textures": "textures/items/egg_mad_miner"
         },
         "tool.bullet": {
             "textures": []
         },
-        "tools.kyanite": {
+        "armour.xxxx": {
             "textures": [
-                "textures/items/tools/biome/kyanite_sword",
-                "textures/items/tools/biome/kyanite_pickaxe",
-                "textures/items/tools/biome/kyanite_axe",
-                "textures/items/tools/biome/kyanite_shovel",
-                "textures/items/tools/biome/kyanite_hoe",
-                "textures/items/tools/biome/kyanite_naginata"
+                "textures/items/xxxx_helmet",
+                "textures/items/xxxx_chestplate",
+                "textures/items/xxxx_leggings",
+                "textures/items/xxxx_boots"
             ]
         },
-        "armour.kyanite": {
+        "tools.xxxx": {
             "textures": [
-                "textures/items/tools/biome/kyanite_kabuto",
-                "textures/items/tools/biome/kyanite_breastplate",
-                "textures/items/tools/biome/kyanite_leggings",
-                "textures/items/tools/biome/kyanite_boots"
+                "textures/items/xxxx_sword",
+                "textures/items/xxxx_pickaxe",
+                "textures/items/xxxx_axe",
+                "textures/items/xxxx_shovel",
+                "textures/items/xxxx_hoe",
+                "textures/items/xxxx_naginata"
             ]
         }
     },

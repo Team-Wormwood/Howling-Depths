@@ -1,0 +1,266 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "sakana:mad_miner",
+            "is_spawnable": true,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "component_groups": {
+            "werewolf:default_aggro": {
+                "minecraft:angry": {
+                    "duration": -1,
+                    "broadcast_anger": true,
+                    "calm_event": {
+                        "event": "minecraft:stop_aggro",
+                        "target": "self"
+                    }
+                }
+            },
+            "werewolf:enhanced_aggro": {
+                "minecraft:angry": {
+                    "duration": -1,
+                    "broadcast_anger": true,
+                    "calm_event": {
+                        "event": "minecraft:stop_aggro",
+                        "target": "self"
+                    }
+                },
+                "minecraft:timer": {
+                    "looping": true,
+                    "time": 5,
+                    "time_down_event": {
+                        "event": "werewolf:special_attack"
+                    }
+                }
+            },
+            "werewolf:default_targeting": {
+                "minecraft:behavior.nearest_attackable_target": {
+                    "priority": 2,
+                    "must_see": true,
+                    "within_radius": 12.0,
+                    "must_see_forget_duration": 40.0,
+                    "entity_types": [
+                        {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "operator": "!=",
+                                        "value": "werewolf"
+                                    }
+                                ]
+                            },
+                            "max_dist": 12
+                        }
+                    ]
+                }
+            }
+        },
+        "components": {
+            "minecraft:is_hidden_when_invisible": {},
+            "minecraft:experience_reward": {
+                "on_death": "query.last_hit_by_player ? (query.is_baby ? 12 : 5) + (Math.die_roll(query.equipment_count,1,3)) : 0"
+            },
+            "minecraft:conditional_bandwidth_optimization": {},
+            // Components
+            "minecraft:type_family": {
+                "family": [
+                    "werewolf",
+                    "monster",
+                    "mob"
+                ]
+            },
+            "minecraft:variant": {
+                "value": 0
+            },
+            "minecraft:breathable": {
+                "total_supply": 15,
+                "suffocate_time": 0
+            },
+            "minecraft:collision_box": {
+                "width": 0.6,
+                "height": 2.0
+            },
+            "minecraft:health": {
+                "value": 30,
+                "max": 30
+            },
+            "minecraft:hurt_on_condition": {
+                "damage_conditions": [
+                    {
+                        "filters": {
+                            "test": "in_lava",
+                            "subject": "self",
+                            "operator": "==",
+                            "value": true
+                        },
+                        "cause": "lava",
+                        "damage_per_tick": 4
+                    }
+                ]
+            },
+            "minecraft:attack": {
+                "damage": 9
+            },
+            "minecraft:movement": {
+                "value": 0.4 // Default 0.35
+            },
+            "minecraft:navigation.walk": {
+                "can_path_over_water": true
+            },
+            "minecraft:movement.basic": {},
+            "minecraft:jump.static": {},
+            "minecraft:follow_range": {
+                "value": 64
+            },
+            "minecraft:loot": {
+                "table": "loot_tables/entities/vindication_illager.json"
+            },
+            "minecraft:equipment": {
+                "table": "loot_tables/entities/vindicator_gear.json"
+            },
+            // Behaviors
+            "minecraft:behavior.float": {
+                "priority": 0
+            },
+            "minecraft:behavior.leap_at_target": {
+                "priority": 4,
+                "yd": 0.4,
+                "must_be_on_ground": false
+            },
+            "minecraft:behavior.melee_attack": {
+                "priority": 3
+            },
+            "minecraft:behavior.random_stroll": {
+                "priority": 9,
+                "speed_multiplier": 1
+            },
+            "minecraft:behavior.look_at_player": {
+                "priority": 10,
+                "look_distance": 8,
+                "probability": 0.02
+            },
+            "minecraft:behavior.hurt_by_target": {
+                "priority": 1
+            },
+            "minecraft:on_target_acquired": {
+                "event": "werewolf:become_aggro",
+                "target": "self"
+            },
+            "minecraft:on_target_escape": {
+                "event": "werewolf:stop_aggro",
+                "target": "self"
+            },
+            "minecraft:physics": {},
+            "minecraft:pushable": {
+                "is_pushable": true,
+                "is_pushable_by_piston": true
+            }
+        },
+        "events": {
+            "minecraft:entity_spawned": {
+                "add": {
+                    "component_groups": [
+                        "werewolf:default_targeting"
+                    ]
+                },
+                "run_command": {
+                    "command": [
+                        "effect @s jump_boost 10000 1 true"
+                    ]
+                }
+            },
+            "werewolf:special_attack": {
+                "randomize": [
+                    {
+                        "weight": 1,
+                        "run_command": {
+                            "command": [
+                                "effect @s levitation 1 1 true"
+                            ],
+                            "target": "self"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "run_command": {
+                            "command": [
+                                "effect @s speed 1 4 true"
+                            ],
+                            "target": "self"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "run_command": {
+                            "command": [
+                                "effect @s jump_boost 1 4 true"
+                            ],
+                            "target": "self"
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "run_command": {
+                            "command": [
+                                "effect @s strength 1 2 true"
+                            ],
+                            "target": "self"
+                        }
+                    }
+                ]
+            },
+            "werewolf:become_aggro": {
+                "sequence": [
+                    {
+                        "filters": {
+                            "test": "moon_phase",
+                            "subject": "self",
+                            "operator": "==",
+                            "value": 0
+                        },
+                        "add": {
+                            "component_groups": [
+                                "werewolf:enhanced_aggro"
+                            ]
+                        },
+                        "remove": {
+                            "component_groups": [
+                                "werewolf:default_aggro"
+                            ]
+                        }
+                    },
+                    {
+                        "filters": {
+                            "test": "moon_phase",
+                            "subject": "self",
+                            "operator": "!=",
+                            "value": 0
+                        },
+                        "add": {
+                            "component_groups": [
+                                "werewolf:default_aggro"
+                            ]
+                        },
+                        "remove": {
+                            "component_groups": [
+                                "werewolf:enhanced_aggro"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "werewolf:stop_aggro": {
+                "remove": {
+                    "component_groups": [
+                        "werewolf:default_aggro",
+                        "werewolf:enhanced_aggro"
+                    ]
+                }
+            }
+        }
+    }
+}

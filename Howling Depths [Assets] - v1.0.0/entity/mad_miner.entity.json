@@ -1,0 +1,48 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "sakana:mad_miner",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/mad_miner"
+			},
+			"geometry": {
+				"default": "geometry.mad_miner"
+			},
+			"spawn_egg": {
+				"texture": "spawn_egg.Werewolf"
+			},
+			"scripts": {
+				"animate": [
+					"werewolf_base",
+					"werewolf_walk",
+					"controller_look_at_target",
+					"controller_werewolf_base",
+					"controller_riding"
+				]
+			},
+			"animations": {
+				"look_at_target_default": "animation.humanoid.look_at_target.default",
+				"look_at_target_gliding": "animation.humanoid.look_at_target.gliding",
+				"look_at_target_swimming": "animation.humanoid.look_at_target.swimming",
+				"riding.arms": "animation.werewolf.riding.arms",
+				"riding.legs": "animation.werewolf.riding.legs",
+				"werewolf_base": "animation.werewolf.base",
+				"werewolf_attack": "animation.werewolf.attack",
+				"werewolf_hand_attack": "animation.werewolf.hand_attack",
+				"werewolf_walk": "animation.werewolf.walk",
+				"controller_look_at_target": "controller.animation.humanoid.look_at_target",
+				"controller_werewolf_base": "controller.animation.werewolf.base",
+				"controller_riding": "controller.animation.humanoid.riding"
+			},
+			"render_controllers": [
+				"controller.render.werewolf"
+			],
+			"enable_attachables": true,
+			"hide_armor": true
+		}
+	}
+}
