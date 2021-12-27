@@ -1,0 +1,43 @@
+{
+    "format_version": "1.18.20",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "sakana:explosion",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "runtime_identifier": "snowball"
+        },
+        "component_groups": {
+            "explosion:set": {
+                "minecraft:explode": {
+                    "fuse_length": [
+                        0,
+                        0
+                    ],
+                    "fuse_lit": true,
+                    "destroy_affected_by_griefing": true,
+                    "power": 5,
+                    "causes_fire": false
+                }
+            }
+        },
+        "components": {},
+        "events": {
+            "minecraft:entity_spawned": {
+                "add": {
+                    "component_groups": [
+                        "explosion:set"
+                    ]
+                }
+            },
+            "explosion:trigger": {
+                "add": {
+                    "component_groups": [
+                        "explosion:set"
+                    ]
+                }
+            }
+        }
+    }
+}

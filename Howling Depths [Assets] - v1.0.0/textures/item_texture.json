@@ -1,6 +1,9 @@
 {
     "resource_pack_name": "vanilla",
     "texture_data": {
+        "emerald_coin": {
+            "textures": "textures/items/emerald_coin"
+        },
         "raw_silver": {
             "textures": "textures/items/raw_silver"
         },

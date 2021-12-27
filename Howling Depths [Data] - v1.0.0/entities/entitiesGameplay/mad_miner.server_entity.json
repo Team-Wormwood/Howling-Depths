@@ -128,7 +128,7 @@
             },
             "minecraft:behavior.leap_at_target": {
                 "priority": 4,
-                "yd": 0.4,
+                "yd": 1,
                 "must_be_on_ground": false
             },
             "minecraft:behavior.melee_attack": {

@@ -1,0 +1,60 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "sakana:wellstone"
+        },
+        "components": {
+            "minecraft:block_light_absorption": 15,
+            "minecraft:unwalkable": true,
+            "minecraft:destroy_time": 32767,
+            "minecraft:loot": "loot_tables/empty.json",
+            "minecraft:on_interact": {
+                "event": "well:eventDestroyed",
+                "condition": "q.get_equipped_item_name(0) == 'book'"
+            },
+            "minecraft:ticking": {
+                "looping": true,
+                "range": [
+                    0,
+                    0
+                ],
+                "on_tick": {
+                    "event": "well:eventDetect"
+                }
+            },
+            "minecraft:on_player_placing": {
+                "event": "well:eventPlaced"
+            },
+            "minecraft:on_placed": {
+                "event": "well:eventPlaced"
+            }
+        },
+        "events": {
+            "well:eventPlaced": {
+                "run_command": {
+                    "command": [
+                        "playsound beacon.activate @a[r=15] ~ ~ ~ 10 1 0",
+                        "playsound conduit.activate @a[r=15] ~ ~ ~ 10 1 0"
+                    ]
+                }
+            },
+            "well:eventDetect": {
+                "run_command": {
+                    "command": [
+                        "execute @e[type=item,name=\"Emerald Coin\",r=1.5] ~ ~ ~ function wellWish",
+                        "kill @e[type=item,r=1]"
+                    ]
+                }
+            },
+            "well:eventDestroyed": {
+                "decrement_stack": {},
+                "run_command": {
+                    "command": [
+                        "function wellDestroyed"
+                    ]
+                }
+            }
+        }
+    }
+}

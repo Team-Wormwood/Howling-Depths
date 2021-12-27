@@ -1,0 +1,30 @@
+{
+	"entity_sounds": {
+		"entities": {
+			"sakana:mad_miner": {
+				"events": {
+					"ambient": {
+						"sound": "mob.wolf.growl",
+						"pitch": [
+							0.90,
+							1.0
+						]
+					},
+					"death": {
+						"sound": "mob.wolf.death",
+						"pitch": [
+							0.70,
+							0.90
+						]
+					},
+					"hurt": "mob.pillager.hurt"
+				},
+				"pitch": [
+					0.70,
+					0.90
+				],
+				"volume": 1.3
+			}
+		}
+	}
+}

@@ -4,14 +4,6 @@
         1,
         0
     ],
-    "sakana:silver_ore": {
-        "sound": "stone",
-        "textures": "silver_ore"
-    },
-    "sakana:silver_block": {
-        "sound": "metal",
-        "textures": "silver_block"
-    },
     "sakana:deepslate_silver_ore": {
         "sound": "deepslate",
         "textures": "deepslate_silver_ore"
@@ -19,5 +11,17 @@
     "sakana:raw_silver_block": {
         "sound": "stone",
         "textures": "raw_silver_block"
+    },
+    "sakana:silver_block": {
+        "sound": "metal",
+        "textures": "silver_block"
+    },
+    "sakana:silver_ore": {
+        "sound": "stone",
+        "textures": "silver_ore"
+    },
+    "sakana:wellstone": {
+        "sound": "stone",
+        "textures": "wellstone"
     }
 }

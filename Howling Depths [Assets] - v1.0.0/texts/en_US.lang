@@ -11,12 +11,14 @@ tile.sakana:deepslate_silver_ore.name=Deepslate Silver Ore
 tile.sakana:silver_block.name=Block of Silver
 tile.sakana:silver_ore.name=Silver Ore
 tile.sakana:raw_silver_block.name=Block of Raw Silver
+tile.sakana:wellstone.name=Wellstone
 
 ## Items
 item.sakana:silver_ingot=Silver Ingot
 item.sakana:silver_nugget=Silver Nugget
 item.sakana:raw_silver=Raw Silver
+item.sakana:emerald_coin=Emerald Coin
 item.spawn_egg.entity.sakana:mad_miner.name=Spawn Maddened Miner
 
 ## Entities
-entity.sakana:mad_miner.name=Maddened
+entity.sakana:mad_miner.name=Maddened Miner
