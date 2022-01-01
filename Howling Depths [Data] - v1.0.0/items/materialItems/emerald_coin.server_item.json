@@ -1,5 +1,5 @@
 {
-    "format_version": "1.18.20",
+    "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
             "identifier": "sakana:emerald_coin",

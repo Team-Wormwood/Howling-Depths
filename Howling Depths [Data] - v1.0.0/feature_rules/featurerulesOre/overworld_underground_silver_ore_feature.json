@@ -3,7 +3,7 @@
     "minecraft:feature_rules": {
         "description": {
             "identifier": "minecraft:overworld_underground_silver_ore_feature",
-            "places_feature": "minecraft:silver_ore_feature"
+            "places_feature": "sakana:featuresore/silver_ore_feature"
         },
         "conditions": {
             "placement_pass": "underground_pass",
