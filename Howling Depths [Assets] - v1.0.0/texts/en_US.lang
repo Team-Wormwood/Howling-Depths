@@ -18,6 +18,15 @@ item.sakana:silver_ingot=Silver Ingot
 item.sakana:silver_nugget=Silver Nugget
 item.sakana:raw_silver=Raw Silver
 item.sakana:emerald_coin=Emerald Coin
+item.sakana:silver_blade=Silver Blade
+item.sakana:jar=Glass Jar
+item.sakana:angel_purity=Glass Jar of Angel Purity
+item.sakana:vial=Glass Vial
+item.sakana:blood=Glass Vial of Blood
+item.sakana:flesh=Human Flesh
+item.sakana:holy_wood_stick=Holy Wood
+item.sakana:pouch=Leather Pouch
+item.sakana:pouch_nightshade=Nightshade-Filled Leather Pouch
 item.spawn_egg.entity.sakana:mad_miner.name=Spawn Maddened Miner
 
 ## Entities

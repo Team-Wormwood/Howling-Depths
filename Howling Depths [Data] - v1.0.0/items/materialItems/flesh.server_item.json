@@ -1,0 +1,53 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "sakana:flesh",
+            "category": "items"
+        },
+        "components": {
+            "minecraft:use_animation": "eat",
+            "minecraft:use_duration": 0.4,
+            "minecraft:creative_category": {
+                "parent": "items"
+            },
+            "minecraft:icon": {
+                "texture": "flesh"
+            },
+            "minecraft:food": {
+                "nutrition": 4,
+                "saturation_modifier": "low",
+                "can_always_eat": true,
+                "on_consume": {
+                    "event": "eventConsumed",
+                    "target": "self"
+                }
+            }
+        },
+        "events": {
+            "eventConsumed": {
+                "randomize": [
+                    {
+                        "weight": 1,
+                        "add_mob_effect": {
+                            "effect": "nausea",
+                            "amplifier": 2,
+                            "duration": 2
+                        }
+                    },
+                    {
+                        "weight": 1,
+                        "add_mob_effect": {
+                            "effect": "hunger",
+                            "amplifier": 1,
+                            "duration": 2
+                        }
+                    },
+                    {
+                        "weight": 3
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -69,10 +69,9 @@
             }
         },
         "events": {
-            // This is intentional, left for future
             "eventHurtEntity": {
                 "sequence": [
-                     {
+                    {
                         "trigger": {
                             "target": "self",
                             "event": "eventUpdateDurability"
