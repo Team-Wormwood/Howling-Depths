@@ -13,7 +13,7 @@
 				"default": "geometry.mad_miner"
 			},
 			"spawn_egg": {
-				"texture": "spawn_egg.Werewolf"
+				"texture": "spawn_egg.mad_miner"
 			},
 			"scripts": {
 				"animate": [

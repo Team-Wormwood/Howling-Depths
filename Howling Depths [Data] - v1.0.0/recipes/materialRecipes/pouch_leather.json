@@ -1,0 +1,23 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "minecraft:pouch_leather"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"# #",
+			" # "
+		],
+		"key": {
+			"#": {
+				"item": "minecraft:leather"
+			}
+		},
+		"result": {
+			"item": "sakana:pouch"
+		}
+	}
+}

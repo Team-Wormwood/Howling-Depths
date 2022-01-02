@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "minecraft:silver_blade_R"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"  X",
+			" X ",
+			"#  "
+		],
+		"key": {
+			"#": {
+				"item": "sakana:holy_wood_stick"
+			},
+			"X": {
+				"item": "sakana:silver_ingot"
+			}
+		},
+		"result": {
+			"item": "sakana:silver_blade"
+		}
+	}
+}

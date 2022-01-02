@@ -116,11 +116,37 @@
             "minecraft:follow_range": {
                 "value": 64
             },
+            // TODO: Add Mad Miner Loot
             "minecraft:loot": {
                 "table": "loot_tables/entities/vindication_illager.json"
             },
             "minecraft:equipment": {
                 "table": "loot_tables/entities/vindicator_gear.json"
+            },
+            // TODO: Silver Weakness
+            "minecraft:damage_sensor": {
+                "triggers": {
+                    "cause": "attack",
+                    "filters": {
+                        "all_of": [
+                            {
+                                "test": "has_equipment",
+                                "subject": "damager",
+                                "domain": "hand",
+                                "value": "sakana:silver_blade"
+                            },
+                            {
+                                "test": "is_family",
+                                "subject": "damager",
+                                "value": "player"
+                            }
+                        ]
+                    },
+                    "damage_multiplier": 3.3,
+                    "on_damage": {
+                        "event": "werewolf:silver_hurt"
+                    }
+                }
             },
             // Behaviors
             "minecraft:behavior.float": {
@@ -259,6 +285,16 @@
                         "werewolf:default_aggro",
                         "werewolf:enhanced_aggro"
                     ]
+                }
+            },
+            "werewolf:silver_hurt": {
+                "run_command": {
+                    "command": [
+                        "effect @s slowness 5 3 true",
+                        "effect @s wither 2 1 true",
+                        "playsound mob.zombie.remedy @a[r=10] ~ ~ ~ 10 1.3 0",
+                        "playsound mob.zombie.remedy @a[r=10] ~ ~ ~ 10 1.3 0"
+                    ] 
                 }
             }
         }

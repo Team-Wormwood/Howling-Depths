@@ -1,0 +1,19 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "sakana:holy_wood_stick",
+            "category": "items"
+        },
+        "components": {
+            "minecraft:hand_equipped": true,
+            "minecraft:damage": 2,
+            "minecraft:creative_category": {
+                "parent": "items"
+            },
+            "minecraft:icon": {
+                "texture": "holy_wood_stick"
+            }
+        }
+    }
+}

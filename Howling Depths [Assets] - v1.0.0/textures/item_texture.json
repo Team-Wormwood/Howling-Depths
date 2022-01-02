@@ -4,8 +4,26 @@
         "emerald_coin": {
             "textures": "textures/items/emerald_coin"
         },
+        "flesh": {
+            "textures": "textures/items/flesh"
+        },
+        "gravedigger": {
+            "textures": "textures/items/gravedigger"
+        },
+        "heavenly_silver_blade": {
+            "textures": "textures/items/heavenly_silver_blade"
+        },
+        "holy_wood_stick": {
+            "textures": "textures/items/holy_wood_stick"
+        },
         "raw_silver": {
             "textures": "textures/items/raw_silver"
+        },
+        "reaper_scythe": {
+            "textures": "textures/items/reaper_scythe"
+        },
+        "silver_blade": {
+            "textures": "textures/items/silver_blade"
         },
         "silver_ingot": {
             "textures": "textures/items/silver_ingot"
@@ -13,28 +31,33 @@
         "silver_nugget": {
             "textures": "textures/items/silver_nugget"
         },
-        "spawn_egg.Werewolf": {
+        "spawn_egg.mad_miner": {
             "textures": "textures/items/egg_mad_miner"
         },
-        "tool.bullet": {
-            "textures": []
+        "spawn_egg.stalker": {
+            "textures": "textures/items/stalker"
         },
-        "armour.xxxx": {
+        "tool.bullet": {
             "textures": [
-                "textures/items/xxxx_helmet",
-                "textures/items/xxxx_chestplate",
-                "textures/items/xxxx_leggings",
-                "textures/items/xxxx_boots"
+                "textures/items/bullet_silver"
             ]
         },
-        "tools.xxxx": {
+        "tool.jar": {
             "textures": [
-                "textures/items/xxxx_sword",
-                "textures/items/xxxx_pickaxe",
-                "textures/items/xxxx_axe",
-                "textures/items/xxxx_shovel",
-                "textures/items/xxxx_hoe",
-                "textures/items/xxxx_naginata"
+                "textures/items/jar",
+                "textures/items/jar_angel_purity"
+            ]
+        },
+        "tool.pouch": {
+            "textures": [
+                "textures/items/pouch",
+                "textures/items/pouch_nightshade"
+            ]
+        },
+        "tool.vial": {
+            "textures": [
+                "textures/items/vial",
+                "textures/items/vial_blood"
             ]
         }
     },

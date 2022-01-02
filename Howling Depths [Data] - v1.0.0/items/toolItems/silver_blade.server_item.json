@@ -1,0 +1,92 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "sakana:silver_blade",
+            "category": "Equipment"
+        },
+        "components": {
+            "tag:minecraft:iron_tier": {},
+            "tag:minecraft:is_sword": {},
+            "minecraft:max_stack_size": 1,
+            "minecraft:damage": 7,
+            "minecraft:can_destroy_in_creative": false,
+            "minecraft:hand_equipped": true,
+            "minecraft:weapon": {
+                "on_hurt_entity": {
+                    "event": "eventHurtEntity"
+                }
+            },
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.equipment"
+            },
+            "minecraft:icon": {
+                "texture": "silver_blade"
+            },
+            "minecraft:durability": {
+                "max_durability": 1024
+            },
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": [
+                            "sakana:silver_ingot"
+                        ],
+                        "repair_amount": 256
+                    },
+                    {
+                        "items": [
+                            "sakana:silver_nugget"
+                        ],
+                        "repair_amount": 28
+                    }
+                ]
+            },
+            "minecraft:digger": {
+                "use_efficiency": true,
+                "destroy_speeds": [
+                    {
+                        "block": "minecraft:bamboo",
+                        "speed": 7,
+                        "on_dig": {
+                            "event": "updateDurability",
+                            "target": "self"
+                        }
+                    },
+                    {
+                        "block": "minecraft:web",
+                        "speed": 7,
+                        "on_dig": {
+                            "event": "updateDurability",
+                            "target": "self"
+                        }
+                    }
+                ],
+                "on_dig": {
+                    "event": "updateDurability",
+                    "target": "self"
+                }
+            }
+        },
+        "events": {
+            // This is intentional, left for future
+            "eventHurtEntity": {
+                "sequence": [
+                     {
+                        "trigger": {
+                            "target": "self",
+                            "event": "eventUpdateDurability"
+                        }
+                    }
+                ]
+            },
+            "eventUpdateDurability": {
+                "damage": {
+                    "type": "durability",
+                    "amount": 1,
+                    "target": "self"
+                }
+            }
+        }
+    }
+}
