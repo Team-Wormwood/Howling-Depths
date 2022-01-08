@@ -1,0 +1,463 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "sakana:gluttonous",
+            "is_spawnable": true,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "component_groups": {
+            "gluttonous:small": {
+                "minecraft:scale": {
+                    "value": 1.1
+                },
+                "minecraft:attack": {
+                    "damage": 5,
+                    "effect_name": "poison",
+                    "effect_duration": 15
+                }
+            },
+            "gluttonous:medium": {
+                "minecraft:scale": {
+                    "value": 1.5
+                },
+                "minecraft:attack": {
+                    "damage": 10,
+                    "effect_name": "poison",
+                    "effect_duration": 15
+                }
+            },
+            "gluttonous:large": {
+                "minecraft:scale": {
+                    "value": 2.0
+                },
+                "minecraft:attack": {
+                    "damage": 20,
+                    "effect_name": "poison",
+                    "effect_duration": 15
+                }
+            },
+            "gluttonous:neutral": {
+                "minecraft:environment_sensor": {
+                    "triggers": {
+                        "filters": {
+                            "test": "is_altitude",
+                            "operator": "<",
+                            "value": 50
+                        },
+                        "event": "gluttonous:become_hostile"
+                    }
+                },
+                "minecraft:on_target_acquired": {
+                    "event": "gluttonous:become_angry"
+                }
+            },
+            "gluttonous:hostile": {
+                "minecraft:environment_sensor": {
+                    "triggers": {
+                        "filters": {
+                            "test": "is_altitude",
+                            "operator": ">",
+                            "value": 50
+                        },
+                        "event": "gluttonous:become_neutral"
+                    }
+                },
+                "minecraft:behavior.nearest_attackable_target": {
+                    "priority": 2,
+                    "must_see": false,
+                    "attack_interval": 5,
+                    "entity_types": [
+                        {
+                            "filters": {
+                                "any_of": [
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "value": "player"
+                                    },
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "value": "human"
+                                    },
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "value": "snowgolem"
+                                    },
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "value": "irongolem"
+                                    }
+                                ]
+                            },
+                            "max_dist": 32
+                        }
+                    ]
+                },
+                "minecraft:behavior.leap_at_target": {
+                    "priority": 4,
+                    "yd": 0.5,
+                    "must_be_on_ground": false
+                },
+                "minecraft:behavior.melee_attack": {
+                    "priority": 3,
+                    "track_target": true,
+                    "random_stop_interval": 100,
+                    "reach_multiplier": 0.8
+                }
+            },
+            "gluttonous:angry": {
+                "minecraft:angry": {
+                    "duration": 10,
+                    "duration_delta": 3,
+                    "calm_event": {
+                        "event": "minecraft:on_calm",
+                        "target": "self"
+                    }
+                },
+                "minecraft:behavior.nearest_attackable_target": {
+                    "priority": 2,
+                    "must_see": true,
+                    "attack_interval": 10,
+                    "entity_types": [
+                        {
+                            "filters": {
+                                "any_of": [
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "value": "player"
+                                    },
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "value": "human"
+                                    },
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "value": "snowgolem"
+                                    },
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "value": "irongolem"
+                                    }
+                                ]
+                            },
+                            "max_dist": 32
+                        }
+                    ]
+                },
+                "minecraft:behavior.leap_at_target": {
+                    "priority": 4,
+                    "yd": 0.5,
+                    "must_be_on_ground": false
+                },
+                "minecraft:behavior.melee_attack": {
+                    "priority": 3,
+                    "track_target": true,
+                    "reach_multiplier": 1.4
+                }
+            }
+        },
+        "components": {
+            "minecraft:is_hidden_when_invisible": {},
+            "minecraft:experience_reward": {
+                "on_death": "query.last_hit_by_player ? 5 : 0"
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "cavespider",
+                    "monster",
+                    "arthropod",
+                    "mob"
+                ]
+            },
+            "minecraft:breathable": {
+                "total_supply": 15,
+                "suffocate_time": 0
+            },
+            "minecraft:nameable": {},
+            "minecraft:loot": {
+                "table": "loot_tables/entities/spider.json"
+            },
+            "minecraft:collision_box": {
+                "width": 0.6,
+                "height": 1.3
+            },
+            "minecraft:health": {
+                "value": 25,
+                "max": 25
+            },
+            "minecraft:interact": {
+                "interactions": [
+                    {
+                        "cooldown": 2.5,
+                        "use_item": true,
+                        "interact_text": "action.interact.vial_blood",
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "domain": "hand",
+                                        "value": "sakana:vial"
+                                    },
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "value": "player"
+                                    }
+                                ]
+                            },
+                            "event": "gluttonous:on_vialed"
+                        }
+                    }
+                ]
+            },
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "cause": "attack",
+                        "damage_multiplier": 4.4,
+                        "on_damage": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "damager",
+                                        "domain": "hand",
+                                        "value": "sakana:silver_blade"
+                                    },
+                                    {
+                                        "test": "is_family",
+                                        "subject": "damager",
+                                        "value": "player"
+                                    }
+                                ]
+                            },
+                            "event": "gluttonous:silver_hurt"
+                        }
+                    },
+                    {
+                        "cause": "all",
+                        "on_damage": {
+                            "event": "gluttonous:hurt"
+                        }
+                    }
+                ]
+            },
+            "minecraft:hurt_on_condition": {
+                "damage_conditions": [
+                    {
+                        "filters": {
+                            "test": "in_lava",
+                            "subject": "self",
+                            "operator": "==",
+                            "value": true
+                        },
+                        "cause": "lava",
+                        "damage_per_tick": 4
+                    }
+                ]
+            },
+            "minecraft:movement": {
+                "value": 0.3
+            },
+            "minecraft:navigation.climb": {
+                "can_path_over_water": true
+            },
+            "minecraft:movement.basic": {},
+            "minecraft:jump.static": {},
+            "minecraft:can_climb": {},
+            "minecraft:despawn": {
+                "despawn_from_distance": {}
+            },
+            "minecraft:behavior.float": {
+                "priority": 1
+            },
+            "minecraft:behavior.mount_pathing": {
+                "priority": 5,
+                "speed_multiplier": 1.25,
+                "target_dist": 0.0,
+                "track_target": true
+            },
+            "minecraft:behavior.random_stroll": {
+                "priority": 6,
+                "speed_multiplier": 0.8
+            },
+            "minecraft:behavior.look_at_player": {
+                "priority": 7,
+                "look_distance": 6.0,
+                "probability": 0.02
+            },
+            "minecraft:behavior.random_look_around": {
+                "priority": 7
+            },
+            "minecraft:behavior.hurt_by_target": {
+                "priority": 1
+            },
+            "minecraft:rideable": {
+                "seat_count": 1,
+                "family_types": [
+                    "zombie"
+                ],
+                "seats": {
+                    "position": [
+                        0.0,
+                        0.3,
+                        0.0
+                    ]
+                }
+            },
+            "minecraft:physics": {},
+            "minecraft:pushable": {
+                "is_pushable": true,
+                "is_pushable_by_piston": true
+            },
+            "minecraft:conditional_bandwidth_optimization": {}
+        },
+        "events": {
+            "minecraft:entity_spawned": {
+                "remove": {},
+                "sequence": [
+                    {
+                        "randomize": [
+                            {
+                                "weight": 1,
+                                "add": {
+                                    "component_groups": [
+                                        "gluttonous:small"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 1,
+                                "add": {
+                                    "component_groups": [
+                                        "gluttonous:medium"
+                                    ]
+                                }
+                            },
+                            {
+                                "weight": 1,
+                                "add": {
+                                    "component_groups": [
+                                        "gluttonous:large"
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "add": {
+                            "component_groups": [
+                                "gluttonous:neutral"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "gluttonous:on_vialed": {
+                "sequence": [
+                    {
+                        "run_command": {
+                            "command": [
+                                "effect @s speed 5 2 true",
+                                "playsound bottle.dragonbreath @a[r=10] ~ ~ ~ 5 1.3 0",
+                                "particle sakana:blood_splash ~ ~0.2 ~"
+                            ]
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": [
+                                "give @s sakana:blood_vial"
+                            ],
+                            "target": "other"
+                        }
+                    }
+                ]
+            },
+            "gluttonous:silver_hurt": {
+                "run_command": {
+                    "command": [
+                        "effect @s speed 5 2 true",
+                        "playsound mob.zombie.remedy @a[r=10] ~ ~ ~ 5 1.3 0"
+                    ]
+                }
+            },
+            "gluttonous:hurt": {
+                "run_command": {
+                    "command": [
+                        "effect @s speed 2 2 true",
+                        "playsound step.honey_block @a[r=15] ~ ~ ~ 25 0.75 1",
+                        "particle sakana:blood_splash ~ ~0.2 ~"
+                    ]
+                }
+            },
+            "gluttonous:become_hostile": {
+                "sequence": [
+                    {
+                        "remove": {
+                            "component_groups": [
+                                "gluttonous:neutral"
+                            ]
+                        },
+                        "add": {
+                            "component_groups": [
+                                "gluttonous:hostile"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "gluttonous:become_neutral": {
+                "remove": {
+                    "component_groups": [
+                        "gluttonous:hostile"
+                    ]
+                },
+                "add": {
+                    "component_groups": [
+                        "gluttonous:neutral"
+                    ]
+                }
+            },
+            "gluttonous:become_angry": {
+                "sequence": [
+                    {
+                        "remove": {
+                            "component_groups": [
+                                "gluttonous:neutral"
+                            ]
+                        },
+                        "add": {
+                            "component_groups": [
+                                "gluttonous:angry"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "gluttonous:on_calm": {
+                "remove": {
+                    "component_groups": [
+                        "gluttonous:angry"
+                    ]
+                },
+                "add": {
+                    "component_groups": [
+                        "gluttonous:neutral"
+                    ]
+                }
+            }
+        }
+    }
+}

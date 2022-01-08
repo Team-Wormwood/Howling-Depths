@@ -1,0 +1,31 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.gluttonous.attack_controller": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"blend_transition": 0.2,
+					"blend_via_shortest_path": true,
+					"transitions": [
+						{
+							"bite_attack": "variable.has_target && variable.attack_time >= 0.0f"
+						}
+					]
+				},
+				"bite_attack": {
+					"blend_transition": 0.2,
+					"blend_via_shortest_path": true,
+					"animations": [
+						"bite_attack"
+					],
+					"transitions": [
+						{
+							"default": "query.any_animation_finished || variable.attack_time < 0.0"
+						}
+					]
+				}
+			}
+		}
+	}
+}

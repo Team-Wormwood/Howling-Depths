@@ -6,6 +6,9 @@
         "deepslate_silver_ore": {
             "textures": "textures/blocks/deepslate_silver_ore"
         },
+        "flesh_block": {
+            "textures": "textures/blocks/flesh_block"
+        },
         "raw_silver_block": {
             "textures": "textures/blocks/raw_silver_block"
         },

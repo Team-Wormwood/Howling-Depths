@@ -24,6 +24,21 @@
 					0.90
 				],
 				"volume": 1.3
+			},
+			"sakana:gluttonous": {
+				"events": {
+					"ambient": "mob.shulker.ambient",
+					"death": "mob.shulker.death",
+					"hurt": "mob.shulker.hurt",
+					"shoot": "mob.shulker.shoot",
+					"shulker.close": "mob.shulker.close",
+					"shulker.open": "mob.shulker.open"
+				},
+				"pitch": [
+					0.50,
+					0.85
+				],
+				"volume": 1.0
 			}
 		}
 	}

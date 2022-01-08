@@ -897,6 +897,7 @@
 				"minecraft:type_family": {
 					"family": [
 						"villager",
+						"human",
 						"peasant",
 						"mob"
 					]
@@ -909,6 +910,7 @@
 				"minecraft:type_family": {
 					"family": [
 						"villager",
+						"human",
 						"peasant",
 						"farmer",
 						"mob"
@@ -954,6 +956,7 @@
 				"minecraft:type_family": {
 					"family": [
 						"villager",
+						"human",
 						"peasant",
 						"fisherman",
 						"mob"
@@ -999,6 +1002,7 @@
 				"minecraft:type_family": {
 					"family": [
 						"villager",
+						"human",
 						"peasant",
 						"shepherd",
 						"mob"
@@ -1044,6 +1048,7 @@
 				"minecraft:type_family": {
 					"family": [
 						"villager",
+						"human",
 						"peasant",
 						"fletcher",
 						"mob"
@@ -1089,6 +1094,7 @@
 				"minecraft:type_family": {
 					"family": [
 						"villager",
+						"human",
 						"librarian",
 						"mob"
 					]
@@ -1133,6 +1139,7 @@
 				"minecraft:type_family": {
 					"family": [
 						"villager",
+						"human",
 						"cartographer",
 						"mob"
 					]
@@ -1177,6 +1184,7 @@
 				"minecraft:type_family": {
 					"family": [
 						"villager",
+						"human",
 						"priest",
 						"cleric",
 						"mob"
@@ -1222,6 +1230,7 @@
 				"minecraft:type_family": {
 					"family": [
 						"villager",
+						"human",
 						"blacksmith",
 						"armorer",
 						"mob"
@@ -1267,6 +1276,7 @@
 				"minecraft:type_family": {
 					"family": [
 						"villager",
+						"human",
 						"blacksmith",
 						"weaponsmith",
 						"mob"
@@ -1312,6 +1322,7 @@
 				"minecraft:type_family": {
 					"family": [
 						"villager",
+						"human",
 						"blacksmith",
 						"toolsmith",
 						"mob"
@@ -1357,6 +1368,7 @@
 				"minecraft:type_family": {
 					"family": [
 						"villager",
+						"human",
 						"artisan",
 						"butcher",
 						"mob"
@@ -1402,6 +1414,7 @@
 				"minecraft:type_family": {
 					"family": [
 						"villager",
+						"human",
 						"artisan",
 						"leatherworker",
 						"mob"
@@ -1447,6 +1460,7 @@
 				"minecraft:type_family": {
 					"family": [
 						"villager",
+						"human",
 						"artisan",
 						"stone_mason",
 						"mob"
@@ -1492,6 +1506,7 @@
 				"minecraft:type_family": {
 					"family": [
 						"villager",
+						"human",
 						"peasant",
 						"nitwit",
 						"mob"

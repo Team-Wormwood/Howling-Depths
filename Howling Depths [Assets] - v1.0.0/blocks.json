@@ -8,6 +8,10 @@
         "sound": "deepslate",
         "textures": "deepslate_silver_ore"
     },
+    "sakana:flesh_block": {
+        "sound": "honey_block",
+        "textures": "flesh_block"
+    },
     "sakana:raw_silver_block": {
         "sound": "stone",
         "textures": "raw_silver_block"

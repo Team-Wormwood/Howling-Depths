@@ -1,0 +1,19 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "sakana:flesh_block"
+		},
+		"components": {
+            // "minecraft:preventsjumping": true,
+            // "minecraft:friction": 0.1,
+            "minecraft:destroy_time": 0.7,
+            "minecraft:map_color": "#ff2e47",
+            "minecraft:creative_category": {
+				"category": "nature",
+				"group": "itemGroup.name.nature"
+			}
+        },
+		"events": {}
+	}
+}

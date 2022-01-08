@@ -11,7 +11,7 @@
                 "parent": "items"
             },
             "minecraft:icon": {
-                "texture": "tool.vial",
+                "texture": "vial.empty",
                 "frame": 0
             }
         }

@@ -123,7 +123,6 @@
             "minecraft:equipment": {
                 "table": "loot_tables/entities/vindicator_gear.json"
             },
-            // TODO: Silver Weakness
             "minecraft:damage_sensor": {
                 "triggers": {
                     "cause": "attack",
