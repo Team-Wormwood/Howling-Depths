@@ -1,0 +1,22 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:search_feature": {
+		"description": {
+			"identifier": "sakana:featuresstructure/wishing_well_placement_search"
+		},
+		"places_feature": "sakana:featuresstructure/wishing_well_positioning",
+		"search_volume": {
+			"min": [
+				-2,
+				0,
+				-2
+			],
+			"max": [
+				2,
+				0,
+				2
+			]
+		},
+		"search_axis": "+y"
+	}
+}

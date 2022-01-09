@@ -11,7 +11,7 @@
                 "parent": "items"
             },
             "minecraft:icon": {
-                "texture": "tool.jar",
+                "texture": "jar.empty",
                 "frame": 0
             }
         }

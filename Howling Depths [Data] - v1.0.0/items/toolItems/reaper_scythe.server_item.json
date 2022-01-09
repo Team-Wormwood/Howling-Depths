@@ -1,0 +1,128 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "sakana:reaper_scythe",
+            "category": "Equipment"
+        },
+        "components": {
+            "tag:minecraft:iron_tier": {},
+            "minecraft:max_stack_size": 1,
+            "minecraft:damage": 9,
+            "minecraft:hand_equipped": true,
+            "minecraft:weapon": {
+                "on_hurt_entity": {
+                    "event": "eventUpdateDurability"
+                }
+            },
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.equipment"
+            },
+            "minecraft:icon": {
+                "texture": "reaper_scythe"
+            },
+            "minecraft:durability": {
+                "max_durability": 768
+            },
+            "minecraft:enchantable": {
+                "value": 16,
+                "slot": "sword"
+            },
+            "minecraft:render_offsets": {
+                "main_hand": {
+                    "first_person": {
+                        "scale": [
+                            0.03,
+                            0.03,
+                            0.03
+                        ],
+                        "position": [
+                            0.7,
+                            0.15,
+                            -0.7
+                        ],
+                        "rotation": [
+                            125,
+                            -240,
+                            25
+                        ]
+                    },
+                    "third_person": {
+                        "position": [
+                            0.826,
+                            1.413,
+                            -1.175
+                        ],
+                        "scale": [
+                            0.09195,
+                            0.07,
+                            0.09195
+                        ]
+                    }
+                }
+            },
+            "minecraft:digger": {
+                "use_efficiency": true,
+                "destroy_speeds": [
+                    {
+                        "block": "minecraft:sculk_sensor",
+                        "speed": 7
+                    },
+                    {
+                        "block": "minecraft:moss_block",
+                        "speed": 7
+                    },
+                    {
+                        "block": "minecraft:nether_wart_block",
+                        "speed": 7
+                    },
+                    {
+                        "block": "minecraft:warped_wart_block",
+                        "speed": 7
+                    },
+                    {
+                        "block": "minecraft:shroomlight",
+                        "speed": 7
+                    },
+                    {
+                        "block": "minecraft:hay_block",
+                        "speed": 7
+                    },
+                    {
+                        "block": "minecraft:target",
+                        "speed": 7
+                    },
+                    {
+                        "block": "minecraft:dried_kelp_block",
+                        "speed": 7
+                    },
+                    {
+                        "block": "minecraft:sponge",
+                        "speed": 7
+                    },
+                    {
+                        "block": "minecraft:leaves",
+                        "speed": 7
+                    },
+                    {
+                        "block": "minecraft:leaves2",
+                        "speed": 7
+                    }
+                ],
+                "on_dig": {
+                    "event": "eventUpdateDurability",
+                    "target": "self"
+                }
+            }
+        },
+        "events": {
+            "eventUpdateDurability": {
+                "damage": {
+                    "type": "durability",
+                    "amount": 1,
+                    "target": "self"
+                }
+            }
+        }
+    }
+}

@@ -16,6 +16,18 @@
         "holy_wood_stick": {
             "textures": "textures/items/holy_wood_stick"
         },
+        "jar.angel_purity": {
+            "textures": "textures/items/jar_angel_purity"
+        },
+        "jar.empty": {
+            "textures": "textures/items/jar"
+        },
+        "pouch.empty": {
+            "textures": "textures/items/pouch"
+        },
+        "pouch.nightshade": {
+            "textures": "textures/items/pouch_nightshade"
+        },
         "raw_silver": {
             "textures": "textures/items/raw_silver"
         },
@@ -64,11 +76,11 @@
         "spawn_egg.stalker": {
             "textures": "textures/items/stalker"
         },
-        "vial.empty": {
-            "textures": "textures/items/vial"
-        },
         "vial.blood": {
             "textures": "textures/items/vial_blood"
+        },
+        "vial.empty": {
+            "textures": "textures/items/vial"
         }
     },
     "texture_name": "atlas.items"

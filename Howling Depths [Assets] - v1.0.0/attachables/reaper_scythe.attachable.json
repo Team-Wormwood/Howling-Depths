@@ -1,0 +1,48 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:attachable": {
+        "description": {
+            "identifier": "sakana:reaper_scythe_temp",
+            "materials": {
+                "default": "entity_alphatest",
+                "enchanted": "entity_alphatest_glint"
+            },
+            "textures": {
+                "default": "textures/items/reaper_scythe",
+                "enchanted": "textures/misc/enchanted_item_glint"
+            },
+            "geometry": {
+                "default": "geometry.reaper_scythe"
+            },
+            "scripts": {
+                "pre_animation": [
+                    "variable.main_hand = context.item_slot == 'main_hand';",
+                    "variable.off_hand = context.item_slot == 'off_hand';"
+                ],
+                "animate": [
+                    {
+                        "thirdperson_main_hand": "variable.main_hand && !context.is_first_person"
+                    },
+                    {
+                        "thirdperson_off_hand": "variable.off_hand && !context.is_first_person"
+                    },
+                    {
+                        "firstperson_main_hand": "variable.main_hand && context.is_first_person"
+                    },
+                    {
+                        "firstperson_off_hand": "variable.off_hand && context.is_first_person"
+                    }
+                ]
+            },
+            "animations": {
+                "thirdperson_main_hand": "animation.reaper_scythe.thirdperson_main_hand",
+                "thirdperson_off_hand": "animation.reaper_scythe.thirdperson_off_hand",
+                "firstperson_main_hand": "animation.reaper_scythe.firstperson_main_hand",
+                "firstperson_off_hand": "animation.reaper_scythe.firstperson_off_hand"
+            },
+            "render_controllers": [
+                "controller.render.item_default"
+            ]
+        }
+    }
+}

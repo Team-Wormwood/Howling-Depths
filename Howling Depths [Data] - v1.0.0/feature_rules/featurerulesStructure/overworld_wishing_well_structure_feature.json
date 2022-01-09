@@ -3,20 +3,14 @@
 	"minecraft:feature_rules": {
 		"description": {
 			"identifier": "minecraft:overworld_wishing_well_structure_feature",
-			"places_feature": "sakana:featuresstructure/wishing_well_feature"
+			"places_feature": "sakana:featuresstructure/wishing_well_placement_search"
 		},
 		"conditions": {
-			"placement_pass": "surface_pass",
-			"minecraft:biome_filter": [
-				{
-					"test": "has_biome_tag",
-					"value": "forest"
-				}
-			]
+			"placement_pass": "first_pass"
 		},
 		"distribution": {
 			"iterations": 1,
-			"scatter_chance": 1,
+			"scatter_chance": 50,
 			"x": {
 				"distribution": "uniform",
 				"extent": [
@@ -24,7 +18,7 @@
 					16
 				]
 			},
-			"y": "query.heightmap(v.worldx, v.worldz) - 6",
+			"y": 0,
 			"z": {
 				"distribution": "uniform",
 				"extent": [

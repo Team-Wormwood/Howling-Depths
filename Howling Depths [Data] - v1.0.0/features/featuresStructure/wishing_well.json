@@ -2,10 +2,10 @@
 	"format_version": "1.13.0",
 	"minecraft:structure_template_feature": {
 		"description": {
-			"identifier": "sakana:featuresstructure/wishing_well_feature"
+			"identifier": "sakana:featuresstructure/wishing_well"
 		},
 		"structure_name": "mystructure:wishing_well",
-		"facing_direction": "random",
+		"facing_direction": "south",
 		"constraints": {}
 	}
 }
