@@ -5,7 +5,7 @@
 			"identifier": "sakana:featuresstructure/wishing_well"
 		},
 		"structure_name": "mystructure:wishing_well",
-		"facing_direction": "south",
+		"facing_direction": "random",
 		"constraints": {}
 	}
 }

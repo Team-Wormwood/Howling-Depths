@@ -3,7 +3,7 @@
 	"minecraft:feature_rules": {
 		"description": {
 			"identifier": "minecraft:overworld_wishing_well_structure_feature",
-			"places_feature": "sakana:featuresstructure/wishing_well_placement_search"
+			"places_feature": "sakana:featuresstructure/wishing_well"
 		},
 		"conditions": {
 			"placement_pass": "first_pass"
