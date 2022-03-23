@@ -1,0 +1,181 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "sakana:reaper",
+            "is_spawnable": true,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "component_groups": {
+            "reaper:attacking": {
+                "minecraft:area_attack": {
+                    "damage_per_tick": 1,
+                    "damage_range": 0.3
+                },
+                "minecraft:navigation.float": {
+                    "can_path_over_water": true,
+                    "can_path_from_air": true
+                },
+                // "minecraft:behavior.hurt_by_target": {
+                //     "priority": 1
+                // },
+                "minecraft:behavior.nearest_attackable_target": {
+                    "priority": 2,
+                    "entity_types": [
+                        {
+                            "filters": {
+                                "any_of": [
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "value": "player"
+                                    },
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "value": "human"
+                                    }
+                                ]
+                            },
+                            "max_dist": 70
+                        }
+                    ],
+                    "must_see": false
+                }
+            },
+            "reaper:conjuring": {},
+            "reaper:despawn_timer": {
+                "minecraft:timer": {
+                    "looping": true,
+                    "time": 9,
+                    "time_down_event": {
+                        "event": "reaper:despawnEnd"
+                    }
+                }
+            },
+            "reaper:despawn": {
+                "minecraft:instant_despawn": {}
+            }
+        },
+        "components": {
+            "minecraft:is_hidden_when_invisible": {},
+            "minecraft:experience_reward": {
+                "on_death": "query.last_hit_by_player ? 5 + (query.equipment_count * Math.Random(1,3)) : 0"
+            },
+            "minecraft:knockback_resistance": {
+                "value": 1.0
+            },
+            "minecraft:nameable": {},
+            "minecraft:type_family": {
+                "family": [
+                    "reaper",
+                    "monster",
+                    "mob"
+                ]
+            },
+            "minecraft:equipment": {
+                "table": "loot_tables/entities/reaper_gear.json"
+            },
+            "minecraft:health": {
+                "value": 644,
+                "max": 644
+            },
+            "minecraft:attack": {
+                "damage": 1
+            },
+            "minecraft:scale": {
+                "value": 1.2
+            },
+            "minecraft:collision_box": {
+                "width": 0.7,
+                "height": 1.8
+            },
+            "minecraft:movement": {
+                "value": 1.0
+            },
+            "minecraft:can_fly": {},
+            "minecraft:movement.basic": {},
+            "minecraft:jump.static": {},
+            "minecraft:can_climb": {},
+            "minecraft:fire_immune": {},
+            "minecraft:despawn": {
+                "despawn_from_distance": {}
+            },
+            "minecraft:behavior.float": {
+                "priority": 0
+            },
+            "minecraft:behavior.charge_attack": {
+                "priority": 4
+            },
+            // "minecraft:behavior.melee_attack": {
+            //     "priority": 3,
+            //     // "track_target": true,
+            //     "reach_multiplier": 2.5
+            // },
+            "minecraft:behavior.look_at_player": {
+                "priority": 9,
+                "look_distance": 6.0,
+                "probability": 0.02
+            },
+            "minecraft:behavior.look_at_entity": {
+                "priority": 9,
+                "look_distance": 6.0,
+                "probability": 0.02,
+                "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "mob"
+                }
+            },
+            "minecraft:physics": {
+                "has_gravity": false,
+                "has_collision": true
+            },
+            "minecraft:conditional_bandwidth_optimization": {}
+        },
+        "events": {
+            "minecraft:entity_spawned": {
+                "add": {
+                    "component_groups": [
+                        "reaper:attacking"
+                    ]
+                }
+            },
+            "reaper:banish_attack": {
+                "run_command": {
+                    "command": [
+                        "playanimation @s animation.reaper.conjure"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "reaper:attacking"
+                    ]
+                },
+                "trigger": {
+                    "event": "reaper:despawnBegin"
+                }
+            },
+            "reaper:despawnBegin": {
+                "add": {
+                    "component_groups": [
+                        "reaper:despawn_timer"
+                    ]
+                }
+            },
+            "reaper:despawnEnd": {
+                "add": {
+                    "component_groups": [
+                        "reaper:despawn"
+                    ]
+                },
+                "run_command": {
+                    "command": [
+                        "function reaperAppearance"
+                    ]
+                }
+            }
+        }
+    }
+}

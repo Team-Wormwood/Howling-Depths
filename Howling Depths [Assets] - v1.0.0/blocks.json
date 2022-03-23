@@ -4,6 +4,10 @@
         1,
         0
     ],
+    "sakana:hellportal": {
+        "sound": "stone",
+        "textures": "invisible"
+    },
     "sakana:deepslate_silver_ore": {
         "sound": "deepslate",
         "textures": "deepslate_silver_ore"

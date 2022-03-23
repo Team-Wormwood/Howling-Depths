@@ -9,6 +9,9 @@
         "flesh_block": {
             "textures": "textures/blocks/flesh_block"
         },
+        "invisible": {
+            "textures": "textures/blocks/invisible"
+        },
         "raw_silver_block": {
             "textures": "textures/blocks/raw_silver_block"
         },

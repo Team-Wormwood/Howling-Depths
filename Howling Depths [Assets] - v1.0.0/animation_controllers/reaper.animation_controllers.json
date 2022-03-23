@@ -1,0 +1,58 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		// TODO: Fix Reaper Animation Loop
+		"controller.animation.reaper.attack_controller": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"blend_transition": 0.2,
+					"blend_via_shortest_path": true,
+					"transitions": [
+						{
+							"scythe_attack": "variable.has_target && variable.attack_time <= 0.0f"
+						}
+					]
+				},
+				"scythe_attack": {
+					"blend_transition": 0.2,
+					"blend_via_shortest_path": true,
+					"animations": [
+						"scythe_attack"
+					],
+					"transitions": [
+						{
+							"default": "query.any_animation_finished || variable.attack_time < 0.0"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.reaper.movement_controller": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"blend_transition": 0.2,
+					"blend_via_shortest_path": true,
+					"transitions": [
+						{
+							"moving": "variable.has_target && variable.attack_time >= 0.0f"
+						}
+					]
+				},
+				"moving": {
+					"blend_transition": 0.2,
+					"blend_via_shortest_path": true,
+					"animations": [
+						"move"
+					],
+					"transitions": [
+						{
+							"default": "query.any_animation_finished || variable.attack_time < 0.0"
+						}
+					]
+				}
+			}
+		}
+	}
+}

@@ -16,6 +16,9 @@
         "holy_wood_stick": {
             "textures": "textures/items/holy_wood_stick"
         },
+        "hunting_revolver": {
+            "textures": "textures/items/hunting_revolver"
+        },
         "jar.angel_purity": {
             "textures": "textures/items/jar_angel_purity"
         },
@@ -36,6 +39,9 @@
         },
         "silver_blade": {
             "textures": "textures/items/silver_blade"
+        },
+        "silver_bullet": {
+            "textures": "textures/items/silver_bullet"
         },
         "silver_ingot": {
             "textures": "textures/items/silver_ingot"
@@ -72,6 +78,9 @@
         // }
         "spawn_egg.mad_miner": {
             "textures": "textures/items/egg_mad_miner"
+        },
+        "spawn_egg.reaper": {
+            "textures": "textures/items/egg_reaper"
         },
         "spawn_egg.stalker": {
             "textures": "textures/items/stalker"

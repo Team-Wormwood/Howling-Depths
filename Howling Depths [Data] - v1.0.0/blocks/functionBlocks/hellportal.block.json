@@ -1,0 +1,41 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "sakana:hellportal"
+        },
+        "components": {
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 0,
+            "minecraft:destroy_time": 32767,
+            "minecraft:entity_collision": false,
+            "minecraft:pick_collision": false,
+            "minecraft:material_instances": {
+                "*": {
+                    "render_method": "alpha_test"
+                }
+            },
+            "minecraft:loot": "loot_tables/empty.json",
+            "minecraft:ticking": {
+                "looping": true,
+                "range": [
+                    6,
+                    6
+                ],
+                "on_tick": {
+                    "event": "hellportal:portalRemove"
+                }
+            }
+        },
+        "events": {
+            "hellportal:portalRemove": {
+                "die": {},
+                "run_command": {
+                    "command": [
+                        "fill ~2 ~-1 ~2 ~-2 ~ ~-2 air 0 replace portal"
+                    ]
+                }
+            }
+        }
+    }
+}

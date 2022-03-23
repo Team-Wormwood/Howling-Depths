@@ -26,13 +26,16 @@ item.sakana:vial=Glass Vial
 item.sakana:blood_vial=Glass Vial of Blood
 item.sakana:flesh=Human Flesh
 item.sakana:holy_wood_stick=Holy Wood
+item.sakana:reaper_scythe=§cReaper's Scythe§r
 item.sakana:pouch=Leather Pouch
 item.sakana:pouch_nightshade=Nightshade-Filled Leather Pouch
 item.spawn_egg.entity.sakana:mad_miner.name=Spawn Maddened Miner
+item.spawn_egg.entity.sakana:reaper.name=Summon §cReaper§r
 item.spawn_egg.entity.sakana:gluttonous.name=Spawn Gluttonous Abomination
 
 ## Entities
 entity.sakana:mad_miner.name=Maddened Miner
+entity.sakana:reaper.name=§cSoul Reaper§r
 entity.sakana:gluttonous.name=Gluttonous Abomination
 
 ## Interactions

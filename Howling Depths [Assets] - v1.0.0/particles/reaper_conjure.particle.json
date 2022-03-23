@@ -1,0 +1,50 @@
+{
+	"format_version": "1.10.0",
+	"particle_effect": {
+		"description": {
+			"identifier": "sakana:reaper_conjure",
+			"basic_render_parameters": {
+				"material": "particles_alpha",
+				"texture": "textures/particle/dark_soul"
+			}
+		},
+		"components": {
+			"minecraft:emitter_rate_steady": {
+				"spawn_rate": 20,
+				"max_particles": 60
+			},
+			"minecraft:emitter_lifetime_once": {
+				"active_time": 4
+			},
+			"minecraft:emitter_shape_point": {
+				"offset": ["math.Random(-0.25, 0.25) ", 0.25, "math.Random(-0.25, 0.25)"]
+			},
+			"minecraft:particle_lifetime_expression": {
+				"max_lifetime": 3
+			},
+			"minecraft:particle_initial_speed": 1,
+			"minecraft:particle_motion_dynamic": {
+				"linear_acceleration": ["math.Random(-0.25, 0.25)", "v.emitter_age + 0.6", "math.Random(-0.25, 0.25)"],
+				"linear_drag_coefficient": "- 0.24"
+			},
+			"minecraft:particle_appearance_billboard": {
+				"size": ["(1.0 - v.particle_age / 2.2) / 2", "(1.0 - v.particle_age / 2.2) / 2"],
+				"facing_camera_mode": "rotate_xyz",
+				"uv": {
+					"texture_width": 16,
+					"texture_height": 176,
+					"flipbook": {
+						"base_UV": [0, 0],
+						"size_UV": [16, 16],
+						"step_UV": [0, 16],
+						"frames_per_second": 11,
+						"max_frame": 11
+					}
+				}
+			},
+			"minecraft:particle_appearance_tinting": {
+				"color": [1, 1, 1, 1]
+			}
+		}
+	}
+}

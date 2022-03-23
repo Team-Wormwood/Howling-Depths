@@ -1,0 +1,40 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "sakana:reaper",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/reaper"
+			},
+			"geometry": {
+				"default": "geometry.reaper"
+			},
+			"spawn_egg": {
+				"texture": "spawn_egg.reaper"
+			},
+			"particle_effects": {
+				"conjure": "sakana:reaper_conjure"
+			},
+			"scripts": {
+				"animate": [
+					"attack",
+					"movement",
+					"look_at_target"
+				]
+			},
+			"animations": {
+				"attack": "controller.animation.reaper.attack_controller",
+				"movement": "controller.animation.reaper.movement_controller",
+				"look_at_target": "animation.reaper.look_at_target",
+				"move": "animation.reaper.move",
+				"scythe_attack": "animation.reaper.scythe_attack"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

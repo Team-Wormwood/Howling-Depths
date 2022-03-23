@@ -286,12 +286,13 @@
                     ]
                 }
             },
-            // TODO: Add subtle particle effect; small sparks, maybe
             "werewolf:silver_hurt": {
                 "run_command": {
                     "command": [
                         "effect @s speed 5 2 true",
-                        "playsound mob.zombie.remedy @a[r=10] ~ ~ ~ 5 1.3 0"
+                        "playsound mob.zombie.remedy @a[r=10] ~ ~ ~ 5 1.3 0",
+                        "particle sakana:unholy_bane ~ ~ ~",
+                        "particle sakana:unholy_bane ~ ~1 ~"
                     ]
                 }
             }

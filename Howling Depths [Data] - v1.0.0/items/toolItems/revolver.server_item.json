@@ -1,0 +1,81 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "sakana:hunting_revolver",
+            "category": "Equipment"
+        },
+        "components": {
+            "tag:gun.Sidearm": {},
+            "minecraft:max_stack_size": 1,
+            "minecraft:use_duration": 2160,
+            "minecraft:damage": 3,
+            "minecraft:creative_category": {
+                "parent": "itemGroup.equipment.name"
+            },
+            "minecraft:weapon": {
+                "on_hurt_entity": {
+                    "event": "hunting_revolver:itemDurability"
+                }
+            },
+            "minecraft:durability": {
+                "max_durability": 512,
+                "damage_chance": {
+                    "max": 100,
+                    "min": 76
+                }
+            },
+            "minecraft:cooldown": {
+                "category": "gunSidearm",
+                "duration": 1.35
+            },
+            "minecraft:icon": {
+                "texture": "hunting_revolver"
+            },
+            "minecraft:on_use": {
+                "on_use": {
+                    "event": "hunting_revolver:itemPrefire"
+                }
+            }
+        },
+        "events": {
+            "hunting_revolver:itemDurability": {
+                "damage": {
+                    "type": "durability",
+                    "amount": 1
+                }
+            },
+            "hunting_revolver:itemPrefire": {
+                "sequence": [
+                    {
+                        "trigger": {
+                            "event": "hunting_revolver:itemFire"
+                        }
+                    }
+                ]
+            },
+            "hunting_revolver:itemFire": {
+                "sequence": [
+                    {
+                        "condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'sakana:silver_bullet')",
+                        "shoot": {
+                            "projectile": "sakana:silver_bullet_entity",
+                            "launch_power": 7
+                        },
+                        "trigger": {
+                            "event": "hunting_revolver:itemDurability"
+                        },
+                        "run_command": {
+                            "command": [
+                                "playsound random.explode @a ~ ~ ~ 15 1 0",
+                                "playsound random.explode @a ~ ~ ~ 15 0.89 0",
+                                "clear @s sakana:silver_bullet 0 1",
+                                "playanimation @s animation.player.modified.pistol_shoot"
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

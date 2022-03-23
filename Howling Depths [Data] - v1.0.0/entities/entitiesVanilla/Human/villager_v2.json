@@ -1858,6 +1858,22 @@
 						"deals_damage": false
 					},
 					{
+                        "cause": "attack",
+						"deals_damage": false,
+                        "on_damage": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "is_family",
+                                        "subject": "damager",
+                                        "value": "reaper"
+                                    }
+                                ]
+                            },
+                            "event": "human:reaper_hurt"
+                        }
+                    },
+					{
 						"on_damage": {
 							"filters": {
 								"any_of": [
@@ -1990,6 +2006,13 @@
 			}
 		},
 		"events": {
+			"human:reaper_hurt": {
+				"run_command": {
+					"command": [
+						"function reaperEffect"
+					]
+				}
+			},
 			"become_witch": {
 				"add": {
 					"component_groups": [

@@ -6,11 +6,17 @@
 			"places_feature": "sakana:featuresstructure/wishing_well"
 		},
 		"conditions": {
-			"placement_pass": "first_pass"
+			"placement_pass": "surface_pass",
+			"minecraft:biome_filter": [
+				{
+					"test": "has_biome_tag",
+					"value": "forest"
+				}
+			]
 		},
 		"distribution": {
 			"iterations": 1,
-			"scatter_chance": 50,
+			"scatter_chance": 1,
 			"x": {
 				"distribution": "uniform",
 				"extent": [
@@ -18,7 +24,7 @@
 					16
 				]
 			},
-			"y": 0,
+			"y": "query.heightmap(v.worldx, v.worldz) - 6",
 			"z": {
 				"distribution": "uniform",
 				"extent": [
