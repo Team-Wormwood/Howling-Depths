@@ -1,6 +1,24 @@
 {
     "format_version": "1.10.0",
     "animations": {
+        // Hunting Revolver
+        "animation.attachable.hunting_revolver.first_person_wield": {
+			"loop": true,
+			"bones": {
+				"rightArm": {
+					"rotation": [90, 0, 0],
+					"position": [17, -7, 9]
+				},
+				"hunting_revolver": {
+					"rotation": [-90, 0, 180],
+					"position": [15, -7, -10],
+					"scale": 1
+				},
+				"rightItem": {
+					"position": [-24, 16, 10]
+				}
+			}
+		},
         // Reaper's Scythe
         "animation.reaper_scythe.thirdperson_main_hand": {
             "loop": true,

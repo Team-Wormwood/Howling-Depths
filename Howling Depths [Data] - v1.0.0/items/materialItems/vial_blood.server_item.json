@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "sakana:blood_vial",
+            "identifier": "yanasakana:blood_vial",
             "category": "items"
         },
         "components": {

@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "sakana:reaper",
+			"identifier": "yanasakana:reaper",
 			"materials": {
 				"default": "entity_emissive_alpha"
 			},
@@ -16,7 +16,7 @@
 				"texture": "spawn_egg.reaper"
 			},
 			"particle_effects": {
-				"conjure": "sakana:reaper_conjure"
+				"conjure": "yanasakana:reaper_conjure"
 			},
 			"scripts": {
 				"animate": [

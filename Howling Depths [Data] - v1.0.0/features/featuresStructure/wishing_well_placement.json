@@ -2,9 +2,9 @@
 	"format_version": "1.13.0",
 	"minecraft:scatter_feature": {
 		"description": {
-			"identifier": "sakana:featuresstructure/wishing_well_placement"
+			"identifier": "yanasakana:featuresstructure/wishing_well_placement"
 		},
-		"places_feature": "sakana:featuresstructure/wishing_well",
+		"places_feature": "yanasakana:featuresstructure/wishing_well",
 		"iterations": 1,
 		"x": 0,
 		"z": 0,

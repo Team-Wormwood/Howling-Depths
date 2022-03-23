@@ -14,12 +14,12 @@ effect @a[r=25] saturation 45 255 true
 effect @a[r=25] bad_omen 202112 1 true
 effect @a[r=25] blindness 33 255 true
 effect @a[r=25] slowness 32 3 true
-clear @a[r=25] sakana:emerald_coin
+clear @a[r=25] yanasakana:emerald_coin
 summon lightning_bolt ~ ~ ~
 camerashake add @a[r=25] 0.1 29 positional
-particle sakana:wishing_well_grant ~ ~ ~
-particle sakana:wishing_well_magic ~ ~ ~
-particle sakana:wishing_well_grant ~ ~7 ~
-execute @a[r=15] ~ ~ ~ particle sakana:wishing_well_magic ~ ~ ~
+particle yanasakana:wishing_well_grant ~ ~ ~
+particle yanasakana:wishing_well_magic ~ ~ ~
+particle yanasakana:wishing_well_grant ~ ~7 ~
+execute @a[r=15] ~ ~ ~ particle yanasakana:wishing_well_magic ~ ~ ~
 
 fill ~15 ~15 ~15 ~-15 ~ ~-15 dirt 0 replace grass

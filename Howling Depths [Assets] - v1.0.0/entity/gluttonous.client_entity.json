@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "sakana:gluttonous",
+			"identifier": "yanasakana:gluttonous",
 			"materials": {
 				"default": "entity_alphatest"
 			},

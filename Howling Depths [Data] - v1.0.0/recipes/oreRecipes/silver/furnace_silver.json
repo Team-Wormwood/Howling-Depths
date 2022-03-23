@@ -8,7 +8,7 @@
 			"furnace",
 			"blast_furnace"
 		],
-		"input": "sakana:raw_silver",
-		"output": "sakana:silver_ingot"
+		"input": "yanasakana:raw_silver",
+		"output": "yanasakana:silver_ingot"
 	}
 }

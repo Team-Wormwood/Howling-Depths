@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "sakana:silver_ore"
+			"identifier": "yanasakana:silver_ore"
 		},
 		"components": {
 			"tag:stone": {},

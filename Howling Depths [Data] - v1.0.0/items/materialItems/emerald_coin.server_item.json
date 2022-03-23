@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "sakana:emerald_coin",
+            "identifier": "yanasakana:emerald_coin",
             "category": "items"
         },
         "components": {

@@ -2,10 +2,10 @@
 	"format_version": "1.13.0",
 	"minecraft:geode_feature": {
 		"description": {
-			"identifier": "sakana:featurespoi/blasphemous_pit_feature"
+			"identifier": "yanasakana:featurespoi/blasphemous_pit_feature"
 		},
 		"filler": "minecraft:air",
-		"inner_layer": "sakana:flesh_block",
+		"inner_layer": "yanasakana:flesh_block",
 		"alternate_inner_layer": "minecraft:bone_block",
 		"middle_layer": "minecraft:blackstone",
 		"outer_layer": "minecraft:smooth_basalt",

@@ -8,7 +8,7 @@
 			"furnace",
 			"blast_furnace"
 		],
-		"input": "sakana:deepslate_silver_ore",
-		"output": "sakana:silver_ingot"
+		"input": "yanasakana:deepslate_silver_ore",
+		"output": "yanasakana:silver_ingot"
 	}
 }

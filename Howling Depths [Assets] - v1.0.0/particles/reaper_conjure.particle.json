@@ -2,7 +2,7 @@
 	"format_version": "1.10.0",
 	"particle_effect": {
 		"description": {
-			"identifier": "sakana:reaper_conjure",
+			"identifier": "yanasakana:reaper_conjure",
 			"basic_render_parameters": {
 				"material": "particles_alpha",
 				"texture": "textures/particle/dark_soul"

@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "sakana:raw_silver",
+            "identifier": "yanasakana:raw_silver",
             "category": "items"
         },
         "components": {

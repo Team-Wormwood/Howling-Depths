@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "sakana:raw_silver_block"
+			"identifier": "yanasakana:raw_silver_block"
 		},
 		"components": {
 			"tag:stone": {},

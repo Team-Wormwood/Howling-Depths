@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "sakana:wellcore"
+			"identifier": "yanasakana:wellcore"
 		},
 		"components": {},
 		"events": {}

@@ -4,31 +4,31 @@
         1,
         0
     ],
-    "sakana:hellportal": {
+    "yanasakana:hellportal": {
         "sound": "stone",
         "textures": "invisible"
     },
-    "sakana:deepslate_silver_ore": {
+    "yanasakana:deepslate_silver_ore": {
         "sound": "deepslate",
         "textures": "deepslate_silver_ore"
     },
-    "sakana:flesh_block": {
+    "yanasakana:flesh_block": {
         "sound": "honey_block",
         "textures": "flesh_block"
     },
-    "sakana:raw_silver_block": {
+    "yanasakana:raw_silver_block": {
         "sound": "stone",
         "textures": "raw_silver_block"
     },
-    "sakana:silver_block": {
+    "yanasakana:silver_block": {
         "sound": "metal",
         "textures": "silver_block"
     },
-    "sakana:silver_ore": {
+    "yanasakana:silver_ore": {
         "sound": "stone",
         "textures": "silver_ore"
     },
-    "sakana:wellstone": {
+    "yanasakana:wellstone": {
         "sound": "stone",
         "textures": "wellstone"
     }

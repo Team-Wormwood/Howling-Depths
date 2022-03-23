@@ -2,7 +2,7 @@
     "format_version": "1.16.0",
     "minecraft:attachable": {
         "description": {
-            "identifier": "sakana:reaper_scythe_temp",
+            "identifier": "yanasakana:reaper_scythe_temp",
             "materials": {
                 "default": "entity_alphatest",
                 "enchanted": "entity_alphatest_glint"

@@ -15,11 +15,11 @@
 		],
 		"key": {
 			"#": {
-				"item": "sakana:silver_nugget"
+				"item": "yanasakana:silver_nugget"
 			}
 		},
 		"result": {
-			"item": "sakana:silver_ingot"
+			"item": "yanasakana:silver_ingot"
 		}
 	}
 }

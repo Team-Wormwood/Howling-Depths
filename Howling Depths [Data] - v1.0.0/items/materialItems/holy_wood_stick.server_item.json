@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "sakana:holy_wood_stick",
+            "identifier": "yanasakana:holy_wood_stick",
             "category": "items"
         },
         "components": {

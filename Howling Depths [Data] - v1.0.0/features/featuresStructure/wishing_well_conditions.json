@@ -2,11 +2,11 @@
 	"format_version": "1.13.0",
 	"minecraft:aggregate_feature": {
 		"description": {
-			"identifier": "sakana:featuresstructure/wishing_well_conditions"
+			"identifier": "yanasakana:featuresstructure/wishing_well_conditions"
 		},
 		"features": [
-			"sakana:featuresstructure/wishing_well_condition",
-			"sakana:featuresstructure/wishing_well_placement"
+			"yanasakana:featuresstructure/wishing_well_condition",
+			"yanasakana:featuresstructure/wishing_well_placement"
 		],
 		"early_out": "first_failure"
 	}

@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "sakana:silver_blade",
+            "identifier": "yanasakana:silver_blade",
             "category": "Equipment"
         },
         "components": {
@@ -30,13 +30,13 @@
                 "repair_items": [
                     {
                         "items": [
-                            "sakana:silver_ingot"
+                            "yanasakana:silver_ingot"
                         ],
                         "repair_amount": 256
                     },
                     {
                         "items": [
-                            "sakana:silver_nugget"
+                            "yanasakana:silver_nugget"
                         ],
                         "repair_amount": 28
                     }

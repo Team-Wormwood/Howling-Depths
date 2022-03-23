@@ -14,11 +14,11 @@
 		],
 		"key": {
 			"#": {
-				"item": "sakana:silver_ingot"
+				"item": "yanasakana:silver_ingot"
 			}
 		},
 		"result": {
-			"item": "sakana:silver_block"
+			"item": "yanasakana:silver_block"
 		}
 	}
 }

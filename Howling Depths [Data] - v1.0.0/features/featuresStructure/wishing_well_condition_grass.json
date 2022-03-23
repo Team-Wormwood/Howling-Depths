@@ -2,7 +2,7 @@
 	"format_version": "1.13.0",
 	"minecraft:single_block_feature": {
 		"description": {
-			"identifier": "sakana:featuresstructure/wishing_well_condition_grass"
+			"identifier": "yanasakana:featuresstructure/wishing_well_condition_grass"
 		},
 		"places_block": "minecraft:grass",
 		"enforce_placement_rules": false,

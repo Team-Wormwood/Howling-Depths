@@ -10,7 +10,7 @@
 - Remain maintained and expanded by both team and community members for as long as is (reasonably) possible.
 
 ## | Contribution Guidelines
-### **I**. The project is to be namespaced "sakana:" universally.
+### **I**. The project is to be namespaced "yanasakana:" universally.
 - Entity, Block, and Item Events are to namespaced with the name of the object, followed by a camelCase event name.
 ### **II**. Pull Requests may be made to the project GitHub, and are greatly encouraged, but all content is to be reviewed, edited, and revised by Yana personally.
 ### **III**. All artistic elements are to be made in a style relatively in the style of Minecraft.

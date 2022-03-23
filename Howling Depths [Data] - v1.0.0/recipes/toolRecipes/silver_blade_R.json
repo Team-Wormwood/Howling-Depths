@@ -14,14 +14,14 @@
 		],
 		"key": {
 			"#": {
-				"item": "sakana:holy_wood_stick"
+				"item": "yanasakana:holy_wood_stick"
 			},
 			"X": {
-				"item": "sakana:silver_ingot"
+				"item": "yanasakana:silver_ingot"
 			}
 		},
 		"result": {
-			"item": "sakana:silver_blade"
+			"item": "yanasakana:silver_blade"
 		}
 	}
 }

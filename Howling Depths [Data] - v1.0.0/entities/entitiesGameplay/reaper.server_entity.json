@@ -2,7 +2,7 @@
     "format_version": "1.16.0",
     "minecraft:entity": {
         "description": {
-            "identifier": "sakana:reaper",
+            "identifier": "yanasakana:reaper",
             "is_spawnable": true,
             "is_summonable": true,
             "is_experimental": false

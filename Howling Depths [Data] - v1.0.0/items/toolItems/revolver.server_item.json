@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "sakana:hunting_revolver",
+            "identifier": "yanasakana:hunting_revolver",
             "category": "Equipment"
         },
         "components": {
@@ -57,9 +57,9 @@
             "hunting_revolver:itemFire": {
                 "sequence": [
                     {
-                        "condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'sakana:silver_bullet')",
+                        "condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'yanasakana:silver_bullet')",
                         "shoot": {
-                            "projectile": "sakana:silver_bullet_entity",
+                            "projectile": "yanasakana:silver_bullet_entity",
                             "launch_power": 7
                         },
                         "trigger": {
@@ -69,7 +69,7 @@
                             "command": [
                                 "playsound random.explode @a ~ ~ ~ 15 1 0",
                                 "playsound random.explode @a ~ ~ ~ 15 0.89 0",
-                                "clear @s sakana:silver_bullet 0 1",
+                                "clear @s yanasakana:silver_bullet 0 1",
                                 "playanimation @s animation.player.modified.pistol_shoot"
                             ]
                         }

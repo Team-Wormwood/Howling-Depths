@@ -12,11 +12,11 @@
 		],
 		"key": {
 			"#": {
-				"item": "sakana:silver_ingot"
+				"item": "yanasakana:silver_ingot"
 			}
 		},
 		"result": {
-			"item": "sakana:silver_nugget",
+			"item": "yanasakana:silver_nugget",
 			"count": 9
 		}
 	}

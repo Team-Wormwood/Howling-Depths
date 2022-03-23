@@ -2,8 +2,8 @@
 	"format_version": "1.13.0",
 	"minecraft:feature_rules": {
 		"description": {
-			"identifier": "sakana:overworld_blasphemous_pit_feature",
-			"places_feature": "sakana:featurespoi/blasphemous_pit_feature"
+			"identifier": "yanasakana:overworld_blasphemous_pit_feature",
+			"places_feature": "yanasakana:featurespoi/blasphemous_pit_feature"
 		},
 		"conditions": {
 			"placement_pass": "after_surface_pass",

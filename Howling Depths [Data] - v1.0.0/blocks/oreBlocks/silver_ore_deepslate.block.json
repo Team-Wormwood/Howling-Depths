@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "sakana:deepslate_silver_ore"
+			"identifier": "yanasakana:deepslate_silver_ore"
 		},
 		"components": {
 			"tag:stone": {},

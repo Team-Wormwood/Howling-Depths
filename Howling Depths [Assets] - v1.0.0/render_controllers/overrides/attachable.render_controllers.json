@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.modified_player.attachable_hunting_revolver": {
+			"geometry": "Geometry.hunting_revolver",
+			"materials": [
+				{
+					"*": "Material.hunting_revolver"
+				}
+			],
+			"textures": [
+				"Texture.hunting_revolver"
+			]
+		}
+	}
+}

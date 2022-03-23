@@ -2,9 +2,9 @@
 	"format_version": "1.13.0",
 	"minecraft:search_feature": {
 		"description": {
-			"identifier": "sakana:featuresstructure/wishing_well_condition"
+			"identifier": "yanasakana:featuresstructure/wishing_well_condition"
 		},
-		"places_feature": "sakana:featuresstructure/wishing_well_condition_grass",
+		"places_feature": "yanasakana:featuresstructure/wishing_well_condition_grass",
 		"search_volume": {
 			"min": [
 				-2,
