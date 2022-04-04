@@ -1,0 +1,85 @@
+{
+	"format_version": "1.10.0",
+	"animations": {
+        "animation.reaper_scythe.thirdperson_main_hand": {
+			"loop": true,
+			"bones": {
+				"root_x": {
+					"rotation": [34.25, 0, 0],
+					"position": [0.5, -0.5, 5.5]
+				},
+				"root_y": {
+					"rotation": [0, 0, 0]
+				},
+				"root_z": {
+					"rotation": [0, 0, 0]
+				},
+				"root": {
+					"rotation": [90, 0, 0],
+					"position": [0, 13, -3]
+				}
+			}
+		},
+		"animation.reaper_scythe.thirdperson_off_hand": {
+			"loop": true,
+			"bones": {
+				"root_x": {
+					"rotation": [34.25, 0, 0],
+					"position": [0.5, -0.5, 5.5]
+				},
+				"root_y": {
+					"rotation": [0, 0, 0]
+				},
+				"root_z": {
+					"rotation": [0, 0, 0]
+				},
+				"root": {
+					"rotation": [90, 0, 0],
+					"position": [0, 13, -3]
+				}
+			}
+		},
+		"animation.reaper_scythe.firstperson_main_hand": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [90, 60, -40],
+					"position": [4, 10, 4],
+					"scale": 1.5
+				},
+				"root_x": {
+					"position": [-3.25, -5.5, -2.25],
+					"rotation": [39.83, 0, 0],
+					"scale": [1, 1.09, 1.03]
+				},
+				"root_y": {
+					"rotation": [0, -5, 0]
+				},
+				"root_z": {
+					"rotation": [0, 0, 10.12]
+				}
+			}
+		},
+		"animation.reaper_scythe.firstperson_off_hand": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [90, 60, -40],
+					"position": [4, 10, 4],
+					"scale": 1.5
+				},
+				"root_x": {
+					"position": [3.25, -5.5, -2.25],
+					"rotation": [39.83, 0, 0],
+					"scale": [1, 1.09, 1.03]
+				},
+				"root_y": {
+					"rotation": [0, -5, 0]
+				},
+				"root_z": {
+					"rotation": [0, 0, 10.12]
+				}
+			}
+        }   
+    }    
+}

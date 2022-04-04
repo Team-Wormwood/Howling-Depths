@@ -1,0 +1,25 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:attachable": {
+        "description": {
+            "identifier": "yanasakana:hunting_revolver",
+            "materials": {
+                "default": "entity_alphatest",
+                "enchanted": "entity_alphatest_glint"
+            },
+            "textures": {
+                "default": "textures/invisible",
+                "enchanted": "textures/misc/enchanted_item_glint"
+            },
+            "geometry": {
+                "default": "geometry.hunting_revolver"
+            },
+            "scripts": {
+                "scale": 0.0
+            },
+            "render_controllers": [
+                "controller.render.item_default"
+            ]
+        }
+    }
+}

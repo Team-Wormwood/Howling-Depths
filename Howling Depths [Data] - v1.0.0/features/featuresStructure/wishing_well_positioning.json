@@ -8,6 +8,6 @@
 		"iterations": 1,
 		"x": 0,
 		"z": 0,
-		"y": "query.heightmap(v.worldx, v.worldz)"
+		"y": "query.heightmap(variable.worldx, variable.worldz)"
 	}
 }

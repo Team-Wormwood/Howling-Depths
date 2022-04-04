@@ -5,7 +5,7 @@
 			"geometry": "Geometry.hunting_revolver",
 			"materials": [
 				{
-					"*": "Material.hunting_revolver"
+					"*": "Material.default"
 				}
 			],
 			"textures": [

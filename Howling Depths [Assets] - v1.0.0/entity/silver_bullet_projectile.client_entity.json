@@ -1,0 +1,31 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "yanasakana:silver_bullet_projectile",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/bullet_atlas"
+			},
+			"geometry": {
+				"default": "geometry.bullet_small"
+			},
+			"scripts": {
+				"animate": [
+					"bullet_travel"
+				]
+			},
+			"animations": {
+				"bullet_travel": "animation.bullet.travel"
+			},
+			"particle_effects": {
+				"trail.silver_bullet": "yanasakana:trail.silver_bullet"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

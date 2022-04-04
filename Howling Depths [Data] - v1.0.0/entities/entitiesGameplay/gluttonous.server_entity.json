@@ -247,6 +247,18 @@
                     },
                     {
                         "cause": "all",
+                        "damage_multiplier": 4.4,
+                        "on_damage": {
+                            "filters": {
+                                "test": "is_family",
+                                "subject": "damager",
+                                "value": "silver_weapon"
+                            },
+                            "event": "gluttonous:silver_hurt"
+                        }
+                    },
+                    {
+                        "cause": "all",
                         "on_damage": {
                             "event": "gluttonous:hurt"
                         }

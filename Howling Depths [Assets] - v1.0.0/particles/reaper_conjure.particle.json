@@ -24,11 +24,11 @@
 			},
 			"minecraft:particle_initial_speed": 1,
 			"minecraft:particle_motion_dynamic": {
-				"linear_acceleration": ["math.Random(-0.25, 0.25)", "v.emitter_age + 0.6", "math.Random(-0.25, 0.25)"],
+				"linear_acceleration": ["math.Random(-0.25, 0.25)", "variable.emitter_age + 0.6", "math.Random(-0.25, 0.25)"],
 				"linear_drag_coefficient": "- 0.24"
 			},
 			"minecraft:particle_appearance_billboard": {
-				"size": ["(1.0 - v.particle_age / 2.2) / 2", "(1.0 - v.particle_age / 2.2) / 2"],
+				"size": ["(1.0 - variable.particle_age / 2.2) / 2", "(1.0 - variable.particle_age / 2.2) / 2"],
 				"facing_camera_mode": "rotate_xyz",
 				"uv": {
 					"texture_width": 16,

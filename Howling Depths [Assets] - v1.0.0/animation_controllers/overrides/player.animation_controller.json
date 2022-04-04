@@ -127,7 +127,7 @@
                 }
             }
         },
-		"controller.animation.modified_player.particles_root": {
+        "controller.animation.modified_player.particles_root": {
             "initial_state": "default",
             "states": {
                 "default": {
@@ -142,7 +142,7 @@
                         {
                             "effect": "carrot_explode",
                             "locator": "muzzle",
-                            "pre_effect_script": "v.count = 8; v.direction.z = 1; v.direction.spread = 0.5; v.speed = 4;"
+                            "pre_effect_script": "variable.count = 8; variable.direction.z = 1; variable.direction.spread = 0.5; variable.speed = 4;"
                         }
                     ],
                     "transitions": [
@@ -153,7 +153,7 @@
                 }
             }
         },
-        "controller.animation.hunting_revolver": {
+        "controller.animation.attachable.hunting_revolver": {
             "initial_state": "default",
             "states": {
                 "default": {
@@ -168,7 +168,7 @@
                     "blend_transition": 0.12,
                     "transitions": [
                         {
-                            "shooting": "query.is_using_item && query.mark_variant == 1"
+                            "shooting": "query.mark_variant == 1"
                         }
                     ]
                 },
@@ -181,7 +181,12 @@
                             "hunting_revolver.first_person_shoot": "variable.is_first_person"
                         }
                     ],
-                    "blend_transition": 0.125,
+                    "particle_effects": [
+                        {
+                            "effect": "fire.hunting_revolver",
+                            "locator": "hunting_revolver_muzzle"
+                        }
+                    ],
                     "transitions": [
                         {
                             "default": "query.any_animation_finished"

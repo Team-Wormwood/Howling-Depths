@@ -1,6 +1,9 @@
 {
     "resource_pack_name": "vanilla",
     "texture_data": {
+        "the_device": {
+            "textures": "textures/items/device"
+        },
         "emerald_coin": {
             "textures": "textures/items/emerald_coin"
         },
@@ -41,7 +44,7 @@
             "textures": "textures/items/silver_blade"
         },
         "silver_bullet": {
-            "textures": "textures/items/silver_bullet"
+            "textures": "textures/items/bullet_silver"
         },
         "silver_ingot": {
             "textures": "textures/items/silver_ingot"

@@ -54,7 +54,7 @@
 				]
 			},
 			"particle_effects": {
-				"fire.hunting_revolver": "yanasakana:fire.hunting_revolver"
+				"fire.hunting_revolver": "yanasakana:fired.silver_bullet"
 			},
 			"animations": {
 				// Modified Attachables' Animations
@@ -64,7 +64,7 @@
 				"hunting_revolver_controller": "controller.animation.attachable.hunting_revolver",
 				"hunting_revolver.wield": "animation.attachable.hunting_revolver.third_person_wield",
 				"hunting_revolver.first_person_wield": "animation.attachable.hunting_revolver.first_person_wield",
-				"hunting_revolver.shoot": "animation.attachable.hunting_revolver.shoot",
+				"hunting_revolver.shoot": "animation.attachable.hunting_revolver.third_person_shoot",
 				"hunting_revolver.first_person_shoot": "animation.attachable.hunting_revolver.first_person_shoot",
 				"hunting_revolver.particles": "animation.attachable.hunting_revolver.particles",
 

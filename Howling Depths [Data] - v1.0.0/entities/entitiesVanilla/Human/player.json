@@ -1,5 +1,5 @@
 {
-	"format_version": "1.17.10",
+	"format_version": "1.18.10",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "minecraft:player",
@@ -8,6 +8,23 @@
 			"is_experimental": false
 		},
 		"component_groups": {
+			// Modified Component Groups
+			"wormwood:client_flag.base_value": {
+				"minecraft:mark_variant": {
+					"value": 0
+				}
+			},
+			"wormwood:client_flag.is_using_experimental_item": {
+				"minecraft:mark_variant": {
+					"value": 1
+				},
+				"minecraft:environment_sensor": {
+					"triggers": {
+						"event": "playerentity:reset_client_flags"
+					}
+				}
+			},
+			// Vanilla Component Groups
 			"minecraft:add_bad_omen": {
 				"minecraft:spell_effects": {
 					"add_effects": [
@@ -46,14 +63,36 @@
 			}
 		},
 		"components": {
-			"minecraft:experience_reward": {
-				"on_death": "Math.Min(query.player_level * 7, 100)"
-			},
+			// ## Modified Components
 			"minecraft:type_family": {
 				"family": [
 					"player",
 					"human"
 				]
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "attack",
+						"deals_damage": false,
+						"on_damage": {
+							"filters": {
+								"all_of": [
+									{
+										"test": "is_family",
+										"subject": "damager",
+										"value": "reaper"
+									}
+								]
+							},
+							"event": "human:reaper_hurt"
+						}
+					}
+				]
+			},
+			// ## Vanilla Components
+			"minecraft:experience_reward": {
+				"on_death": "Math.Min(query.player_level * 7, 100)"
 			},
 			"minecraft:is_hidden_when_invisible": {},
 			"minecraft:loot": {
@@ -67,26 +106,6 @@
 			"minecraft:movement": {
 				"value": 0.1
 			},
-			"minecraft:damage_sensor": {
-                "triggers": [
-                    {
-                        "cause": "attack",
-						"deals_damage": false,
-                        "on_damage": {
-                            "filters": {
-                                "all_of": [
-                                    {
-                                        "test": "is_family",
-                                        "subject": "damager",
-                                        "value": "reaper"
-                                    }
-                                ]
-                            },
-                            "event": "human:reaper_hurt"
-                        }
-                    }
-                ]
-            },
 			"minecraft:hurt_on_condition": {
 				"damage_conditions": [
 					{
@@ -189,6 +208,40 @@
 			}
 		},
 		"events": {
+			"playerentity:client_flag.is_using_experimental_item": {
+				"run_command": {
+					"command": [
+						"tell @a[tag=dev] §bdebug.Event :: §aclient_flag.is_using_experimental_item§r"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"wormwood:client_flag.is_using_experimental_item"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"wormwood:client_flag.base_value"
+					]
+				}
+			},
+			"playerentity:reset_client_flags": {
+				"run_command": {
+					"command": [
+						"tell @a[tag=dev] §bdebug.Event :: §areset_client_flags§r"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"wormwood:client_flag.base_value"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"wormwood:client_flag.is_using_experimental_item"
+					]
+				}
+			},
 			"human:reaper_hurt": {
 				"run_command": {
 					"command": [

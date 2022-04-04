@@ -15,6 +15,7 @@ tile.yanasakana:raw_silver_block.name=Block of Raw Silver
 tile.yanasakana:wellstone.name=Wellstone
 
 ## Items
+item.yanasakana:the_device=§dThe Device
 item.yanasakana:silver_ingot=Silver Ingot
 item.yanasakana:silver_nugget=Silver Nugget
 item.yanasakana:raw_silver=Raw Silver
@@ -25,18 +26,21 @@ item.yanasakana:angel_purity=Glass Jar of Angel Purity
 item.yanasakana:vial=Glass Vial
 item.yanasakana:blood_vial=Glass Vial of Blood
 item.yanasakana:flesh=Human Flesh
+item.yanasakana:hunting_revolver=Hunting Revolver
 item.yanasakana:holy_wood_stick=Holy Wood
 item.yanasakana:reaper_scythe=§cReaper's Scythe§r
 item.yanasakana:pouch=Leather Pouch
 item.yanasakana:pouch_nightshade=Nightshade-Filled Leather Pouch
+item.yanasakana:silver_bullet=Silver Bullet
 item.spawn_egg.entity.yanasakana:mad_miner.name=Spawn Maddened Miner
 item.spawn_egg.entity.yanasakana:reaper.name=Summon §cReaper§r
 item.spawn_egg.entity.yanasakana:gluttonous.name=Spawn Gluttonous Abomination
 
 ## Entities
-entity.yanasakana:mad_miner.name=Maddened Miner
-entity.yanasakana:reaper.name=§cSoul Reaper§r
 entity.yanasakana:gluttonous.name=Gluttonous Abomination
+entity.yanasakana:mad_miner.name=Maddened Miner
+entity.yanasakana:silver_bullet_projectile.name=Silver Bullet
+entity.yanasakana:reaper.name=§cSoul Reaper§r
 
 ## Interactions
 action.interact.vial_blood=Draw Blood
