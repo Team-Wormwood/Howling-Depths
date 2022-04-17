@@ -16,6 +16,7 @@ tile.yanasakana:wellstone.name=Wellstone
 
 ## Items
 item.yanasakana:the_device=§dThe Device
+item.yanasakana:the_button=§dThe Button
 item.yanasakana:silver_ingot=Silver Ingot
 item.yanasakana:silver_nugget=Silver Nugget
 item.yanasakana:raw_silver=Raw Silver

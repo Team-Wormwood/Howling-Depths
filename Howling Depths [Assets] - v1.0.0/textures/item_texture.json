@@ -4,6 +4,9 @@
         "the_device": {
             "textures": "textures/items/device"
         },
+        "the_button": {
+            "textures": "textures/items/button"
+        },
         "emerald_coin": {
             "textures": "textures/items/emerald_coin"
         },
