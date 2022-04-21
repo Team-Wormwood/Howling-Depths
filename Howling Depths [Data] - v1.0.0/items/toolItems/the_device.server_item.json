@@ -12,7 +12,7 @@
             "minecraft:damage": 32767,
             "minecraft:cooldown": {
                 "category": "the_device",
-                "duration": 0.55
+                "duration": 0.0
             },
             "minecraft:icon": {
                 "texture": "the_device"
