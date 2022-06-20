@@ -17,8 +17,8 @@
 				"name": "minecraft:nether_wart_block"
 			}
 		],
-		"min_outer_wall_distance": 24,
-		"max_outer_wall_distance": 46,
+		"min_outer_wall_distance": 9,
+		"max_outer_wall_distance": 10,
 		"min_distribution_points": 3,
 		"max_distribution_points": 5,
 		"min_point_offset": 1,
