@@ -85,6 +85,7 @@
 		},
 		"animation.gluttonous.bite": {
 			"animation_length": 0.84,
+			"loop": "hold_on_last_frame",
 			"bones": {
 				"body": {
 					"rotation": {
