@@ -1,0 +1,20 @@
+[
+  {
+    "flipbook_texture": "textures/blocks/fleshlamp",
+    "atlas_tile": "fleshlamp",
+    "ticks_per_frame": 100
+  },
+  {
+    "flipbook_texture": "textures/blocks/flesh_block_pulsing",
+    "atlas_tile": "flesh_block_pulsing",
+    "ticks_per_frame": 6,
+    "frames": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 2, 2, 3, 2, 0, 0, 1, 0],
+    "blend_frames": false
+  },
+  {
+    "flipbook_texture": "textures/blocks/flesh_block_septic",
+    "atlas_tile": "flesh_block_septic",
+    "ticks_per_frame": 25,
+    "frames": [ 0, 1, 2, 2, 3, 3, 2, 1, 0, 0]
+  }
+]

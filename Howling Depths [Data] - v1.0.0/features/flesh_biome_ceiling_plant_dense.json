@@ -1,0 +1,21 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:growing_plant_feature": {
+    "description": {
+      "identifier": "yanasakana:flesh_biome_ceiling_plant_dense"
+    },
+    "height_distribution":  [
+      [{"range_min": 1, "range_max": 2}, 3],
+      [{"range_min": 2, "range_max": 4}, 3],
+      [{"range_min": 3, "range_max": 6}, 2]
+    ],
+    "growth_direction": "DOWN",
+    "body_blocks": [
+      ["yanasakana:flesh_vine", 1]
+    ],
+    "head_blocks": [
+      ["yanasakana:flesh_vine", 4],
+      ["yanasakana:fleshlamp", 1]
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "yanasakana:flesh_hole_block_active"
+		},
+		"components": {
+            "tag:yanasakana:flesh_block": {},
+            "minecraft:destroy_time": 32767,
+            "minecraft:breathability": "air",
+			"minecraft:loot": "loot_tables/empty.json",
+            "minecraft:map_color": "#ff2e47",
+            "minecraft:creative_category": {
+				"category": "nature",
+				"group": "itemGroup.name.nature"
+			},
+			"minecraft:on_placed": {
+				"event": "flesh:block_placed"
+			}
+        },
+		"events": {
+			"flesh:block_placed": {
+		        "run_command": {
+				    "command": [
+	                    "summon yanasakana:gluttonous ~ ~-1 ~ gluttonous:born_from_block",
+	                    "setblock ~ ~ ~ yanasakana:flesh_hole_block",
+	                    "particle yanasakana:blood_splash ~ ~-1 ~"
+					]
+				}
+			}
+        }
+	}
+}

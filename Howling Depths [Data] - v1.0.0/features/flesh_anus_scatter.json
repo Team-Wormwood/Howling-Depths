@@ -1,0 +1,19 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "yanasakana:flesh_anus_scatter"
+    },
+    "places_feature": "yanasakana:flesh_snap_to_floor_anus",
+    "iterations": "math.random(1,4)",
+    "x": {
+      "distribution": "uniform",
+      "extent": [ -7, 7 ]
+    },
+    "y": 0,
+    "z": {
+      "distribution": "uniform",
+      "extent": [ -7, 7 ]
+    }
+  }
+}

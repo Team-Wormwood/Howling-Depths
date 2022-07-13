@@ -2,11 +2,9 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "yanasakana:flesh_block"
+			"identifier": "yanasakana:flesh_block_pulsating"
 		},
 		"components": {
-            // "minecraft:preventsjumping": true,
-            // "minecraft:friction": 0.1,
             "tag:yanasakana:flesh_block": {},
             "minecraft:destroy_time": 0.7,
             "minecraft:map_color": "#ff2e47",

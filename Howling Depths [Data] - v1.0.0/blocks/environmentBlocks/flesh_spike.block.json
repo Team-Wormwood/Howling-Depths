@@ -1,0 +1,76 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "yanasakana:flesh_spike"
+		},
+		"components": {
+            "minecraft:destroy_time": 0.1,
+            "minecraft:map_color": "#ff2e47",
+			"minecraft:loot": "loot_tables/empty.json",
+            "minecraft:creative_category": {
+				"category": "nature",
+				"group": "itemGroup.name.nature"
+			},
+            "minecraft:placement_filter": {
+                "conditions": [
+                    {
+                        "allowed_faces": ["up"],
+                        "block_filter": [
+                            {
+                                "tags": "q.any_tag('yanasakana:flesh_block')"
+                            },
+                            "minecraft:bone_block"
+                        ]
+                    }
+                ]
+            },
+            "minecraft:block_light_emission": 0,
+            "minecraft:block_light_absorption": 0,
+            "minecraft:breathability": "air",
+            "minecraft:geometry": "geometry.crossblock",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "flesh_spike",
+                    "render_method": "blend"
+                }
+            },
+            "minecraft:pick_collision": {
+                "origin": [
+                    -6,
+                    0,
+                    -6
+                ],
+                "size": [
+                    12,
+                    4,
+                    12
+                ]
+            },
+            "minecraft:entity_collision": {
+                "origin": [
+                    0,
+                    0,
+                    0
+                ],
+                "size": [
+                    0,
+                    0,
+                    0
+                ]
+            },
+			"minecraft:on_player_destroyed": {
+				"event": "flesh:block_destroyed"
+			}
+        },
+		"events": {
+			"flesh:block_destroyed": {
+		        "run_command": {
+				    "command": [
+	                    "fill ~10 ~10 ~10 ~-10 ~ ~-10 yanasakana:flesh_hole_block_active 0 replace yanasakana:flesh_hole_block 0"
+					]
+				}
+			}
+        }
+	}
+}

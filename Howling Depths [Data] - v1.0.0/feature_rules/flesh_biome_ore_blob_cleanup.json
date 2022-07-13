@@ -1,0 +1,45 @@
+{
+	"format_version": "1.13.0",
+
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "yanasakana:flesh_biome_ore_blob_cleanup",
+			"places_feature": "yanasakana:deepslate_ore_blob_no_air_large"
+		},
+
+		"conditions": {
+			"placement_pass": "after_surface_pass",
+
+			"minecraft:biome_filter": {
+				"all_of": [
+					{
+						"any_of": [
+							{
+								"test": "has_biome_tag",
+								"operator": "==",
+								"value": "overworld"
+							}
+						]
+					}
+				]
+			}
+		},
+
+		"distribution": {
+			"iterations": 12,
+
+			"x": {
+				"distribution": "fixed_grid",
+				"extent": [0, 15]
+			},
+			"z": {
+				"distribution": "fixed_grid",
+				"extent": [0, 15]
+			},
+		    "y": {
+		    	"distribution": "uniform",
+		    	"extent": ["(q.noise(v.worldx / 512, v.worldz / 512) > 0.81) || (q.noise(v.worldx / 256, v.worldz / 256) > 0.6) ? -60 : -100", "(q.noise(v.worldx / 512, v.worldz / 512) > 0.81) || (q.noise(v.worldx / 256, v.worldz / 256) > 0.6) ? 5 : -100"]
+	    	}
+		}
+	}
+}

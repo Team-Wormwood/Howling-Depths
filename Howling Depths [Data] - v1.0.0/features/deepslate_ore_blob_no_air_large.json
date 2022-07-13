@@ -1,0 +1,37 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "yanasakana:deepslate_ore_blob_no_air_large"
+    },
+  "count": 128,
+  "discard_chance_on_air_exposure": 1,
+  "replace_rules": [
+    {
+      "places_block": "minecraft:deepslate",
+      "may_replace": [
+        "yanasakana:flesh_block",
+        "yanasakana:flesh_block_pulsating"
+      ]
+    },
+    {
+      "places_block": "minecraft:deepslate_iron_ore",
+      "may_replace": [
+        "yanasakana:flesh_iron_ore"
+      ]
+    },
+    {
+      "places_block": "minecraft:deepslate_gold_ore",
+      "may_replace": [
+        "yanasakana:flesh_gold_ore"
+      ]
+    },
+    {
+      "places_block": "minecraft:deepslate_copper_ore",
+      "may_replace": [
+        "yanasakana:flesh_copper_ore"
+      ]
+    }
+  ]
+  }
+}

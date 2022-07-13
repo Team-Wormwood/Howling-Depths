@@ -1,0 +1,24 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:growing_plant_feature": {
+    "description": {
+      "identifier": "yanasakana:flesh_biome_ceiling_plant_bone_s"
+    },
+    "height_distribution":  [
+      [{"range_min": 1, "range_max": 1}, 2],
+      [{"range_min": 1, "range_max": 2}, 1]
+    ],
+    "growth_direction": "DOWN",
+    "body_blocks": [
+      ["minecraft:bone_block", 14],
+      ["yanasakana:flesh_block", 1],
+      ["yanasakana:flesh_iron_ore", 1],
+      ["yanasakana:flesh_gold_ore", 1],
+      ["yanasakana:flesh_copper_ore", 1],
+      ["yanasakana:flesh_block_pulsating", 2]
+    ],
+    "head_blocks": [
+      ["minecraft:bone_block", 1]
+    ]
+  }
+}

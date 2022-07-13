@@ -16,6 +16,50 @@
         "sound": "honey_block",
         "textures": "flesh_block"
     },
+    "yanasakana:flesh_iron_ore": {
+        "sound": "honey_block",
+        "textures": "flesh_iron_ore"
+    },
+    "yanasakana:flesh_gold_ore": {
+        "sound": "honey_block",
+        "textures": "flesh_gold_ore"
+    },
+    "yanasakana:flesh_copper_ore": {
+        "sound": "honey_block",
+        "textures": "flesh_copper_ore"
+    },
+    "yanasakana:flesh_block_pulsating": {
+        "sound": "honey_block",
+        "textures": "flesh_block_pulsating"
+    },
+    "yanasakana:flesh_vine": {
+        "sound": "honey_block",
+        "textures": "flesh_vine"
+    },
+    "yanasakana:flesh_spike": {
+        "sound": "honey_block",
+        "textures": "flesh_spike"
+    },
+    "yanasakana:septic_flesh_block": {
+        "sound": "honey_block",
+        "textures": "flesh_block_septic"
+    },
+    "yanasakana:flesh_hole_block": {
+        "sound": "honey_block",
+        "textures" : {
+            "down" : "flesh_anus_block",
+            "side" : "flesh_block",
+            "up" : "flesh_block"
+        }
+    },
+    "yanasakana:flesh_hole_block_active": {
+        "sound": "honey_block",
+        "textures" : {
+            "down" : "flesh_anus_block",
+            "side" : "flesh_block",
+            "up" : "flesh_block"
+        }
+    },
     "yanasakana:raw_silver_block": {
         "sound": "stone",
         "textures": "raw_silver_block"

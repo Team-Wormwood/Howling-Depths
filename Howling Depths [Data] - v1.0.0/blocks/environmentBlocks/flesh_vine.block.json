@@ -1,0 +1,77 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "yanasakana:flesh_vine"
+		},
+		"components": {
+            "minecraft:destroy_time": 0.1,
+            "minecraft:map_color": "#ff2e47",
+			"minecraft:loot": "loot_tables/empty.json",
+            "minecraft:creative_category": {
+				"category": "nature",
+				"group": "itemGroup.name.nature"
+			},
+            "minecraft:placement_filter": {
+                "conditions": [
+                    {
+                        "allowed_faces": ["down"],
+                        "block_filter": [
+                            {
+                                "tags": "q.any_tag('yanasakana:flesh_block')"
+                            },
+                            "minecraft:bone_block",
+                            "yanasakana:flesh_vine"
+                        ]
+                    }
+                ]
+            },
+            "minecraft:block_light_emission": 0,
+            "minecraft:block_light_absorption": 0,
+            "minecraft:breathability": "air",
+            "minecraft:geometry": "geometry.crossblock",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "flesh_vine",
+                    "render_method": "blend"
+                }
+            },
+            "minecraft:pick_collision": {
+                "origin": [
+                    -3.25,
+                    0,
+                    -3.25
+                ],
+                "size": [
+                    6.5,
+                    16,
+                    6.5
+                ]
+            },
+            "minecraft:entity_collision": {
+                "origin": [
+                    0,
+                    0,
+                    0
+                ],
+                "size": [
+                    0,
+                    0,
+                    0
+                ]
+            },
+			"minecraft:on_player_destroyed": {
+				"event": "flesh:block_destroyed"
+			}
+        },
+		"events": {
+			"flesh:block_destroyed": {
+		        "run_command": {
+				    "command": [
+	                    "fill ~10 ~10 ~10 ~-10 ~ ~-10 yanasakana:flesh_hole_block_active 0 replace yanasakana:flesh_hole_block 0"
+					]
+				}
+			}
+        }
+	}
+}

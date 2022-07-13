@@ -1,0 +1,13 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:aggregate_feature": {
+    "description": {
+      "identifier": "yanasakana:flesh_ceiling_aggrigate"
+    },
+    "features": [
+      "yanasakana:flesh_surface_ore_blob_medium",
+      "yanasakana:flesh_surface_ore_blob_medium",
+      "yanasakana:flesh_surface_ore_blob_medium"
+    ]
+  }
+}

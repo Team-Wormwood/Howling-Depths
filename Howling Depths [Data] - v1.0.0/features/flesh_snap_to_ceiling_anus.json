@@ -1,0 +1,11 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:snap_to_surface_feature": {
+    "description": {
+      "identifier": "yanasakana:flesh_snap_to_ceiling_anus"
+    },
+    "feature_to_snap":  "yanasakana:flesh_anus_single_block_scatter_embed",
+    "vertical_search_range":  9,
+    "surface": "ceiling"
+  }
+}
