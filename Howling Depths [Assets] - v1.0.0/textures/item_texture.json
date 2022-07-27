@@ -1,9 +1,7 @@
 {
     "resource_pack_name": "vanilla",
     "texture_data": {
-        "the_device": {
-            "textures": "textures/items/device"
-        },
+        
         "the_button": {
             "textures": "textures/items/button"
         },
