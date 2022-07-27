@@ -1,0 +1,15 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:aggregate_feature": {
+    "description": {
+      "identifier": "yanasakana:flesh_biome_surfaces"
+    },
+    "features": [
+      "yanasakana:flesh_snap_to_ceiling",
+      "yanasakana:flesh_snap_to_floor",
+      "yanasakana:flesh_surface_ore_blob_large",
+      "yanasakana:flesh_surface_ore_blob_large",
+      "yanasakana:flesh_surface_ore_blob_large"
+    ]
+  }
+}

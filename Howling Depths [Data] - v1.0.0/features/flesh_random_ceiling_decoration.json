@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:weighted_random_feature": {
+    "description": {
+      "identifier": "yanasakana:flesh_random_ceiling_decoration"
+    },
+    "features": [
+      [ "yanasakana:flesh_bone_patch_ceiling_s", 4 ],
+      [ "yanasakana:flesh_patch_ceiling_high_veg", 4 ],
+      [ "yanasakana:flesh_patch_ceiling", 10 ],
+      [ "wormwood:no_feature", 2 ]
+    ]
+  }
+}

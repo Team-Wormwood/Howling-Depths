@@ -1,0 +1,12 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:weighted_random_feature": {
+    "description": {
+      "identifier": "yanasakana:flesh_random_bone_and_vine"
+    },
+    "features": [
+      [ "yanasakana:flesh_biome_ceiling_plant", 7 ],
+      [ "yanasakana:flesh_biome_ceiling_plant_bone_s", 3 ]
+    ]
+  }
+}

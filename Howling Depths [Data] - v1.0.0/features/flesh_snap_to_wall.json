@@ -1,0 +1,11 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:snap_to_surface_feature": {
+    "description": {
+      "identifier": "yanasakana:flesh_snap_to_wall"
+    },
+    "feature_to_snap":  "yanasakana:flesh_wall_scatter",
+    "vertical_search_range":  6,
+    "surface": "random_horizontal"
+  }
+}

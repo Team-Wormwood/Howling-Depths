@@ -1,0 +1,13 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:weighted_random_feature": {
+    "description": {
+      "identifier": "yanasakana:flesh_weighted_random_terrain_thing"
+    },
+    "features": [
+      [ "yanasakana:flesh_wall_scatter", 4 ],
+      [ "yanasakana:flesh_snap_to_surfaces_aggregate", 5 ],
+      [ "yanasakana:flesh_anus_scatter", 11 ]
+    ]
+  }
+}

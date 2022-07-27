@@ -1,0 +1,12 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:weighted_random_feature": {
+    "description": {
+      "identifier": "yanasakana:flesh_random_bone_and_spike"
+    },
+    "features": [
+      [ "yanasakana:flesh_biome_floor_plant", 3 ],
+      [ "yanasakana:flesh_biome_floor_plant_bone_s", 2 ]
+    ]
+  }
+}

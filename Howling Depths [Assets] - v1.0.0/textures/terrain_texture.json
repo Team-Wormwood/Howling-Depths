@@ -9,6 +9,33 @@
         "flesh_block": {
             "textures": "textures/blocks/flesh_block"
         },
+        "flesh_iron_ore": {
+            "textures": "textures/blocks/flesh_iron_ore"
+        },
+        "flesh_gold_ore": {
+            "textures": "textures/blocks/flesh_gold_ore"
+        },
+        "flesh_copper_ore": {
+            "textures": "textures/blocks/flesh_copper_ore"
+        },
+        "flesh_block_pulsating": {
+            "textures": "textures/blocks/flesh_block_pulsing"
+        },
+        "fleshlamp": {
+            "textures": "textures/blocks/fleshlamp"
+        },
+        "flesh_vine": {
+            "textures": "textures/blocks/sinew"
+        },
+        "flesh_spike": {
+            "textures": "textures/blocks/texture"
+        },
+        "flesh_block_septic": {
+            "textures": "textures/blocks/flesh_block_septic"
+        },
+        "flesh_anus_block": {
+            "textures": "textures/blocks/flesh_anus_block"
+        },
         "invisible": {
             "textures": "textures/blocks/invisible"
         },

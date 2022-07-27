@@ -1,0 +1,19 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "yanasakana:flesh_wall_scatter"
+    },
+    "places_feature": "yanasakana:flesh_septic_single_scatter",
+    "iterations": "math.random(2,5)",
+    "x": {
+      "distribution": "uniform",
+      "extent": [ 0, 9 ]
+    },
+    "y": 0,
+    "z": {
+      "distribution": "uniform",
+      "extent": [ 0, 9 ]
+    }
+  }
+}

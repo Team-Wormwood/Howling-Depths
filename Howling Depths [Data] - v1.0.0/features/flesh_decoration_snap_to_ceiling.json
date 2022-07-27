@@ -1,0 +1,11 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:snap_to_surface_feature": {
+    "description": {
+      "identifier": "yanasakana:flesh_decoration_snap_to_ceiling"
+    },
+    "feature_to_snap":  "yanasakana:flesh_random_ceiling_decoration",
+    "vertical_search_range":  15,
+    "surface": "ceiling"
+  }
+}

@@ -1,0 +1,45 @@
+{
+	"format_version": "1.13.0",
+
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "yanasakana:flesh_biome_placement",
+			"places_feature": "yanasakana:flesh_biome_surfaces"
+		},
+
+		"conditions": {
+			"placement_pass": "before_surface_pass",
+
+			"minecraft:biome_filter": {
+				"all_of": [
+					{
+						"any_of": [
+							{
+								"test": "has_biome_tag",
+								"operator": "==",
+								"value": "overworld"
+							}
+						]
+					}
+				]
+			}
+		},
+
+		"distribution": {
+			"iterations": 8,
+
+			"x": {
+				"distribution": "fixed_grid",
+				"extent": [0, 15]
+			},
+			"z": {
+				"distribution": "fixed_grid",
+				"extent": [0, 15]
+			},
+		    "y": {
+		    	"distribution": "uniform",
+		    	"extent": ["(q.noise(v.worldx / 512, v.worldz / 512) > 0.81) || (q.noise(v.worldx / 256, v.worldz / 256) > 0.6) ? -64 : -100", "(q.noise(v.worldx / 512, v.worldz / 512) > 0.81) || (q.noise(v.worldx / 256, v.worldz / 256) > 0.6) ? -10 : -100"]
+	    	}
+		}
+	}
+}

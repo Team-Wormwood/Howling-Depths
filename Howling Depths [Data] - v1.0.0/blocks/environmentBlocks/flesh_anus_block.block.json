@@ -2,13 +2,13 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "yanasakana:flesh_block"
+			"identifier": "yanasakana:flesh_hole_block"
 		},
 		"components": {
-            // "minecraft:preventsjumping": true,
-            // "minecraft:friction": 0.1,
             "tag:yanasakana:flesh_block": {},
             "minecraft:destroy_time": 0.7,
+            "minecraft:breathability": "air",
+			"minecraft:loot": "loot_tables/empty.json",
             "minecraft:map_color": "#ff2e47",
             "minecraft:creative_category": {
 				"category": "nature",

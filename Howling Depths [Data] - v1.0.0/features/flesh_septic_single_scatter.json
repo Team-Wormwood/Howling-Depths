@@ -1,0 +1,22 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "yanasakana:flesh_septic_single_scatter"
+    },
+    "places_feature": "yanasakana:flesh_single_block",
+    "iterations": 40,
+    "x": {
+      "distribution": "uniform",
+      "extent": [ 0, 2 ]
+    },
+    "y": {
+      "distribution": "uniform",
+      "extent": [ 0, 9 ]
+    },
+    "z": {
+      "distribution": "uniform",
+      "extent": [ 0, 2 ]
+    }
+  }
+}

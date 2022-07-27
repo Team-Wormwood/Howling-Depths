@@ -1,0 +1,53 @@
+{
+	"format_version": "1.13.0",
+
+	"minecraft:single_block_feature": {
+		"description": {
+			"identifier": "yanasakana:flesh_single_block"
+		},
+
+		"places_block": "yanasakana:septic_flesh_block",
+
+		"enforce_placement_rules": false,
+		"enforce_survivability_rules": false,
+        "may_replace": [
+            {
+                "name": "minecraft:air"
+            },
+            {
+                "name": "yanasakana:fleshlamp"
+            },
+            {
+                "name": "yanasakana:flesh_vine"
+            },
+            {
+                "name": "yanasakana:flesh_spike"
+            }
+        ],
+        "may_attach_to": {
+            "min_sides_must_attach": 2,
+            "top": [
+                {
+                    "name": "yanasakana:flesh_block"
+                },
+                {
+                    "name": "yanasakana:septic_flesh_block"
+                },
+                {
+                    "name": "yanasakana:flesh_block_pulsating"
+                }
+            ],
+            "bottom": [
+                {
+                    "name": "yanasakana:flesh_block"
+                },
+                {
+                    "name": "yanasakana:septic_flesh_block"
+                },
+                {
+                    "name": "yanasakana:flesh_block_pulsating"
+                }
+            ]
+        }
+	}
+}

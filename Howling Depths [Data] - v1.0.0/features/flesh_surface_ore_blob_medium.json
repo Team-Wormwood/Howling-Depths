@@ -1,0 +1,64 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "yanasakana:flesh_surface_ore_blob_medium"
+    },
+  "count": 64,
+  "replace_rules": [
+    {
+      "places_block": "yanasakana:flesh_block",
+      "may_replace": [
+        "minecraft:stone",
+        "minecraft:deepslate"
+      ]
+    },
+    {
+      "places_block": "yanasakana:flesh_iron_ore",
+      "may_replace": [
+        "minecraft:iron_ore",
+        "minecraft:deepslate_iron_ore"
+      ]
+    },
+    {
+      "places_block": "yanasakana:flesh_gold_ore",
+      "may_replace": [
+        "minecraft:gold_ore",
+        "minecraft:deepslate_gold_ore"
+      ]
+    },
+    {
+      "places_block": "yanasakana:flesh_copper_ore",
+      "may_replace": [
+        "minecraft:copper_ore",
+        "minecraft:deepslate_copper_ore"
+      ]
+    },
+    {
+      "places_block": "yanasakana:septic_flesh_block",
+      "may_replace": [
+        "minecraft:mossy_cobblestone"
+      ]
+    },
+    {
+      "places_block": "yanasakana:flesh_block_pulsating",
+      "may_replace": [
+        "minecraft:cobblestone",
+        "minecraft:tuff",
+        "minecraft:gravel",
+        "minecraft:dirt",
+        "minecraft:lapis_ore",
+        "minecraft:diamond_ore",
+        "minecraft:redstone_ore",
+        "minecraft:emerald_ore",
+        "minecraft:deepslate_lapis_ore",
+        "minecraft:deepslate_diamond_ore",
+        "minecraft:deepslate_redstone_ore",
+        "minecraft:deepslate_emerald_ore",
+        "minecraft:clay",
+        "minecraft:mud"
+      ]
+    }
+  ]
+  }
+}

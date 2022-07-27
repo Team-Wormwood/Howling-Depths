@@ -2,24 +2,26 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "yanasakana:flesh_block"
+			"identifier": "yanasakana:flesh_iron_ore"
 		},
 		"components": {
-            // "minecraft:preventsjumping": true,
-            // "minecraft:friction": 0.1,
             "tag:yanasakana:flesh_block": {},
-            "minecraft:destroy_time": 0.7,
-            "minecraft:map_color": "#ff2e47",
-            "minecraft:creative_category": {
+			"minecraft:destroy_time": 0.9,
+			"minecraft:map_color": "#ff2e47",
+			"minecraft:loot": "loot_tables/empty.json",
+			"minecraft:creative_category": {
 				"category": "nature",
-				"group": "itemGroup.name.nature"
+				"group": "itemGroup.name.ore"
 			},
 			"minecraft:on_player_destroyed": {
 				"event": "flesh:block_destroyed"
 			}
-        },
+		},
 		"events": {
 			"flesh:block_destroyed": {
+				"spawn_loot": {
+					"table": "loot_tables/blocks/oreTables/flesh.iron.loot_table.json"
+				},
 		        "run_command": {
 				    "command": [
 	                    "particle yanasakana:blood_splash ~ ~ ~",
@@ -27,6 +29,6 @@
 					]
 				}
 			}
-        }
+		}
 	}
 }
