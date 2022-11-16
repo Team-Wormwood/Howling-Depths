@@ -26,9 +26,6 @@
         "jar.angel_purity": {
             "textures": "textures/items/jar_angel_purity"
         },
-        "jar.empty": {
-            "textures": "textures/items/jar"
-        },
         "pouch.empty": {
             "textures": "textures/items/pouch"
         },
@@ -91,9 +88,6 @@
         },
         "vial.blood": {
             "textures": "textures/items/vial_blood"
-        },
-        "vial.empty": {
-            "textures": "textures/items/vial"
         }
     },
     "texture_name": "atlas.items"
